@@ -15,10 +15,7 @@
                         <h1 class="mt-3 "><b>INVOICE</b> <i class="fas fa-file-invoice-dollar"></i> </h1>
                         </div>
 
-                        <div class="col">
-                        <button onclick="window.print()" style="float:right" class="btn btn-success"> PRINT INVOICE <i
-                            class="fas fa-print"></i></button>
-                        </div>
+                        
                     </div>
                     
                     

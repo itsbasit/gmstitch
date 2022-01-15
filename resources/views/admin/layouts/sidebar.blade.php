@@ -108,18 +108,119 @@
                             </p>
                         </a>
                     </li>
-                    {{-- <li class="nav-item menu-open bg-warning">
-                        <a href="" class="nav-link">
-                            <i class="nav-icon fas fa-address-card"></i>
-
-                            <p>
-                                Darzi Delivered
-                            </p>
-                        </a>
-                    </li> --}}
+                   
 
                 </ul>
             </li>
+
+
+            <li class="nav-item bg-primary text-warning">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-users"></i>
+                    <p>
+                        Waistcoat
+                        <i class="fas fa-angle-left right"></i>
+                        {{-- <span class="badge badge-info right">6</span> --}}
+                    </p>
+                </a>
+                <ul class="nav nav-treeview bg-info text-white">
+
+                    <li class="nav-item menu-open bg-warning">
+                        <a href="{{ route('waistcoat.index') }}" class="nav-link">
+                            <i class="nav-icon fas fa-address-card"></i>
+
+                            <p>
+                            Waistcoat Record
+                            </p>
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav-item menu-open bg-warning">
+                        <a href="{{ route('invoice.index') }}" class="nav-link">
+                            <i class="nav-icon fas fa-address-card"></i>
+
+                            <p>
+                                Invoice
+                            </p>
+                        </a>
+                    </li> -->
+                   
+
+                </ul>
+            </li>
+
+
+            <li class="nav-item bg-primary text-warning">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-users"></i>
+                    <p>
+                        Shirt
+                        <i class="fas fa-angle-left right"></i>
+                        {{-- <span class="badge badge-info right">6</span> --}}
+                    </p>
+                </a>
+                <ul class="nav nav-treeview bg-info text-white">
+
+                    <li class="nav-item menu-open bg-warning">
+                        <a href="{{ route('customer.index') }}" class="nav-link">
+                            <i class="nav-icon fas fa-address-card"></i>
+
+                            <p>
+                                Shirts Record
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item menu-open bg-warning">
+                        <a href="{{ route('invoice.index') }}" class="nav-link">
+                            <i class="nav-icon fas fa-address-card"></i>
+
+                            <p>
+                                Invoice
+                            </p>
+                        </a>
+                    </li>
+                   
+
+                </ul>
+            </li>
+
+
+            <li class="nav-item bg-primary text-warning">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-users"></i>
+                    <p>
+                        Shirt
+                        <i class="fas fa-angle-left right"></i>
+                        {{-- <span class="badge badge-info right">6</span> --}}
+                    </p>
+                </a>
+                <ul class="nav nav-treeview bg-info text-white">
+
+                    <li class="nav-item menu-open bg-warning">
+                        <a href="{{ route('customer.index') }}" class="nav-link">
+                            <i class="nav-icon fas fa-address-card"></i>
+
+                            <p>
+                                Shirts Record
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item menu-open bg-warning">
+                        <a href="{{ route('invoice.index') }}" class="nav-link">
+                            <i class="nav-icon fas fa-address-card"></i>
+
+                            <p>
+                                Invoice
+                            </p>
+                        </a>
+                    </li>
+                   
+
+                </ul>
+            </li>
+
             <li class="nav-item bg-info text-dark">
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-layer-group"></i>

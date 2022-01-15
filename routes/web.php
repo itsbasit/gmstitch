@@ -10,6 +10,8 @@ use App\Http\Controllers\CustomerstockController;
 use App\Http\Controllers\LedgerController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\fetchCustomer;
+use App\Http\Controllers\DownloadInvoice;
+use App\Http\Controllers\WaistcoatController;
 
 
 /*
@@ -41,6 +43,8 @@ Route::post('/getCustomer', [fetchCustomer::class,'index']);
 
 Route::resource('customer', CustomerController::class);
 Route::resource('invoice', InvoiceController::class);
+Route::get('/downloadinvoice/{id}',[DownloadInvoice::class,'index']);
+Route::resource('waistcoat', WaistcoatController::class);
 // Route::get('/', 'App\Http\Controllers\Invoice@index')->name('invoice');
 
 Route::resource('stock', StockController::class);

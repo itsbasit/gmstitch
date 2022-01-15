@@ -3,7 +3,7 @@
 @section('title', 'Create Invoice')
 
 @section('content')
-    <a href="{{ route('employee.index') }}"><button class=" ml-3 btn btn-primary btn-sm mt-3 mb-3">Back To
+    <a href="{{ route('invoice.index') }}"><button class=" ml-3 btn btn-primary btn-sm mt-3 mb-3">Back To
             List</button></a>
     <div class="container-fluid ">
         <h1 class="p-3 "><b>+Create Invoice</b></h1>

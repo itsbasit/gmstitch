@@ -15,17 +15,15 @@ class CreateCustomerTable extends Migration
     {
         Schema::create('customer', function (Blueprint $table) {
 
-            $table->integer('id',20);
+            $table->id();
+            $table->integer('customerID');
             $table->string('name');
             $table->string('mobile')->nullable()->default('NULL');
             $table->string('email')->nullable()->default('NULL');
-            $table->string('type1')->nullable()->default('NULL');
+            $table->text('type1')->nullable()->default('NULL');
             $table->string('type2')->nullable()->default('NULL');
             $table->string('type3')->nullable()->default('NULL');
-            $table->string('currentdate')->nullable()->default('NULL');
-            $table->string('returndate')->nullable()->default('NULL');
             $table->string('stitcher')->nullable()->default('NULL');
-            $table->string('discount',20)->nullable()->default('NULL');
             $table->string('total_price')->nullable()->default('NULL');
             $table->string('lambai')->nullable()->default('NULL');
             $table->string('calar')->nullable()->default('NULL');
@@ -40,8 +38,8 @@ class CreateCustomerTable extends Migration
             $table->string('design')->nullable()->default('NULL');
             $table->string('pait')->nullable()->default('NULL');
             $table->string('silai')->nullable()->default('NULL');
-            $table->string('pocket')->nullable()->default('NULL');
-            $table->string('pocketfront')->nullable()->default('NULL');
+            $table->string('side_pocket')->nullable()->default('NULL');
+            $table->string('front_pocket',200);
             $table->string('kamar')->nullable()->default('NULL');
             $table->string('hip')->nullable()->default('NULL');
             $table->string('cuffsize')->nullable()->default('NULL');
@@ -57,14 +55,10 @@ class CreateCustomerTable extends Migration
             $table->string('tayar1',25)->nullable()->default('NULL');
             $table->string('tayar2',25)->nullable()->default('NULL');
             $table->string('tayar3',25)->nullable()->default('NULL');
-            $table->string('tayar4',25)->nullable()->default('NULL');
-            // $table->string('poncha2',20)->nullable()->default('NULL');
-            $table->string('rack')->nullable()->default('NULL');
+            $table->string('poncha2',20)->nullable()->default('NULL');
             $table->string('enteredby')->nullable()->default('NULL');
-            $table->string('advance')->nullable()->default('NULL');
-            $table->timestamp('created_at')->default('current_timestamp');
-            $table->timestamp('updated_at')->default('current_timestamp');
-    
+            $table->timestamps();
+
             });
     }
 
