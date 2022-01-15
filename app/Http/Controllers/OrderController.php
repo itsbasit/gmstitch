@@ -53,6 +53,7 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
+        
         $order=new Orders;
         $order->id=$request->id;
         $order->no_of_suit=$request->no_of_suit;

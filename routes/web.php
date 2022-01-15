@@ -35,6 +35,7 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
+// Route::group(['middleware' => 'auth'], function () {
 
 Route::resource('employee', EmployeeController::class);
 Route::resource('employeerecord', EmployeeRecordController::class);
@@ -51,3 +52,5 @@ Route::resource('stock', StockController::class);
 Route::resource('stockcustomer', CustomerstockController::class);
 Route::resource('ledger', LedgerController::class);
 Route::resource('order', OrderController::class);
+
+// });
