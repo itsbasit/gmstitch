@@ -22,8 +22,8 @@ class PantSizeController extends Controller
                 ->addIndexColumn()
                 ->addColumn('action', function($row){
                     $btn ='&nbsp;<a href="javascript:void(0)" data-id="'.$row->id.'" class=" btn btn-danger btn-sm  dlt">Delete <i class="fas fa-trash-alt"></i></a>';
-                    $btn .= '&nbsp;<a href="pantsize/'.$row->id.'/edit" class="btn btn-success btn-sm showbtn">Update <i class="fas fa-file-alt"></i></a>';
-                    // $btn .= '&nbsp;<a href="downloadinvoice/'.$row->id.'" class="btn btn-success btn-sm showbtn">Print <i class="fas fa-file-alt"></i></a>';
+                    $btn .= '&nbsp;<a href="pantsize/'.$row->id.'/edit" class="btn btn-success btn-sm showbtn">Update <i class="fas fa-file-alt"></i></a><br>';
+                    $btn .= '&nbsp;<a href="pantsize/'.$row->id.'" class="btn btn-success btn-sm showbtn">Size Chart <i class="fas fa-file-alt"></i></a>';
                     return $btn;
                 })
                 ->rawColumns(['action'])
@@ -51,6 +51,9 @@ class PantSizeController extends Controller
     public function store(Request $request)
     {
         $pant = new PantSizeModel;
+        $pant->customerID = $request->customerID;
+        $pant->name = $request->name;
+        $pant->mobile = $request->mobile;
         $pant->kamar = $request->kamar;
         $pant->hip = $request->hip;
         $pant->length = $request->length;
@@ -79,7 +82,7 @@ class PantSizeController extends Controller
 
             // dd($data[0]->type1);
             //    $data = Customer::find($id)->all();
-                return view('showreportcustomers', compact('data'));
+                return view('pantsize.sizechart', compact('data'));
     }
 
     /**
@@ -104,6 +107,9 @@ class PantSizeController extends Controller
     public function update(Request $request, $id)
     {
         $pant = PantSizeModel::find($id);
+        $pant->customerID = $request->customerID;
+        $pant->name = $request->name;
+        $pant->mobile = $request->mobile;
         $pant->kamar = $request->kamar;
         $pant->hip = $request->hip;
         $pant->length = $request->length;

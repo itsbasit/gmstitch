@@ -15,6 +15,9 @@ class CreatePantsizeTable extends Migration
     {
         Schema::create('pantsize', function (Blueprint $table) {
             $table->id();
+            $table->integer('customerID')->nullable();
+            $table->string('name')->nullable();
+            $table->text('mobile')->nullable();
             $table->string('type')->nullable();
             $table->string('kamar')->nullable();
             $table->string('hip')->nullable();

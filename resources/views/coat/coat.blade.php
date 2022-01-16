@@ -48,6 +48,10 @@
                     <table class="table table-bordered table-striped table-hover text-center" id="myTable">
                         <thead>
                             <tr>
+                                
+                                <th>Customer ID <i class="fas fa-list-ol"></i></th>
+                                <th>Name <i class="fas fa-list-ol"></i></th>
+                                <th>Mobile <i class="fas fa-list-ol"></i></th>
                                 <th>Type <i class="fas fa-list-ol"></i></th>
                                 <th>لمبائی <i class="fas fa-tshirt"></i></th>
                                 <th>تیرا <i class="fas fa-tshirt"></i></th>
@@ -86,6 +90,20 @@
 
                         ajax: "{{ route('coat.index') }}",
                         columns: [
+                            {
+                                data: 'customerID',
+                                name: 'customerID'
+                            },
+
+                            {
+                                data: 'name',
+                                name: 'name'
+                            },
+
+                            {
+                                data: 'mobile',
+                                name: 'mobile'
+                            },
                             {
                                 data: 'type',
                                 name: 'type'

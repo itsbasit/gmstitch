@@ -22,7 +22,19 @@
                     <div class="form-row">
                         @csrf
 
-                        
+                        <div class="form-group col-lg-4">
+                            <label for="">CustomerID <i class="fas fa-ruler"></i></label>
+                            <input type="text" placeholder="Enter Customer ID" name="customerID" class="form-control">
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for="">Name <i class="fas fa-ruler"></i></label>
+                            <input type="text" placeholder="Enter Customer Name" name="name" class="form-control">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label for="">Mobile <i class="fas fa-ruler"></i></label>
+                            <input type="text" placeholder="Enter Customer Mobile" name="mobile" class="form-control">
+                        </div>
 
                         <div class="form-group col-lg-4">
                             <label for="">کمر <i class="fas fa-ruler"></i></label>

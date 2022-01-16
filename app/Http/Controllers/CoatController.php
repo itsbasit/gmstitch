@@ -21,8 +21,8 @@ class CoatController extends Controller
                 ->addIndexColumn()
                 ->addColumn('action', function($row){
                     $btn ='&nbsp;<a href="javascript:void(0)" data-id="'.$row->id.'" class=" btn btn-danger btn-sm  dlt">Delete <i class="fas fa-trash-alt"></i></a>';
-                    $btn .= '&nbsp;<a href="coat/'.$row->id.'/edit" class="btn btn-success btn-sm showbtn">Update <i class="fas fa-file-alt"></i></a>';
-                    // $btn .= '&nbsp;<a href="customer/'.$row->id.'" class="btn btn-primary btn-sm editbtn">SIZE CHART <i class="fas fa-edit"></i></a>';
+                    $btn .= '&nbsp;<a href="coat/'.$row->id.'/edit" class="btn btn-success btn-sm showbtn">Update <i class="fas fa-file-alt"></i></a><br>';
+                    $btn .= '&nbsp;<a href="coat/'.$row->id.'" class="btn btn-primary btn-sm editbtn">SIZE CHART <i class="fas fa-edit"></i></a>';
 
                     return $btn;
                 })
@@ -53,6 +53,9 @@ class CoatController extends Controller
         $coat = new CoatModel;
 
         $coat->type = $request->type;
+        $coat->customerID = $request->customerID;
+        $coat->name = $request->name;
+        $coat->mobile = $request->mobile;
         $coat->length = $request->length;
         $coat->bazu = $request->bazu;
         $coat->tira = $request->tira;
@@ -81,7 +84,8 @@ class CoatController extends Controller
      */
     public function show($id)
     {
-        //
+        $data = CoatModel::where('id', '=', $id)->get();
+        return view('coat.sizechart', compact('data'));
     }
 
     /**
@@ -109,6 +113,9 @@ class CoatController extends Controller
         $coat = CoatModel::find($id);
     
         $coat->type = $request->type;
+        $coat->customerID = $request->customerID;
+        $coat->name = $request->name;
+        $coat->mobile = $request->mobile;
         $coat->length = $request->length;
         $coat->bazu = $request->bazu;
         $coat->tira = $request->tira;

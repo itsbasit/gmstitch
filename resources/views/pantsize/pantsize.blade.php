@@ -23,7 +23,7 @@
             <!-- <div class="card mt-4" style=" border-radius: 50px;border-width: 6px;border-color: blue;"> -->
             <div class="card mt-4 p-3">
                 <div class="card-header">
-                    <h1 class="mt-3 "><b>Coat</b> <i class="fas fa-user-friends"></i></h1>
+                    <h1 class="mt-3 "><b>Pant Size</b> <i class="fas fa-user-friends"></i></h1>
 
                     <div class="mt-3">
 
@@ -49,6 +49,9 @@
                         <thead>
                             <tr>
                                
+                                <th>CustomerID <i class="fas fa-tshirt"></i></th>
+                                <th>Name <i class="fas fa-tshirt"></i></th>
+                                <th>Mobile <i class="fas fa-tshirt"></i></th>
                                 <th>کمر <i class="fas fa-tshirt"></i></th>
                                 <th> ہپ <i class="fas fa-tshirt"></i></th>
                                 <th> باڈی <i class="fas fa-tshirt"></i></th>
@@ -80,6 +83,18 @@
                         ajax: "{{ route('pantsize.index') }}",
                         columns: [
                           
+                            {
+                                data: 'customerID',
+                                name: 'customerID'
+                            },
+                            {
+                                data: 'name',
+                                name: 'name'
+                            },
+                            {
+                                data: 'mobile',
+                                name: 'mobile'
+                            },
                             {
                                 data: 'kamar',
                                 name: 'kamar'

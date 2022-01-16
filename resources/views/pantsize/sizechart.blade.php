@@ -1,5 +1,5 @@
 @extends('admin.layouts.master')
-@section('title', 'WaistCoat Print Record')
+@section('title', 'PantSize Print Record')
 
 @section('css')
 <style>
@@ -17,7 +17,7 @@
 
 @section('content')
     <div>
-        <a href="{{ route('coat.index') }}" class="btn btn-primary rounded-pill mt-4 ml-3"> Back To List</a>
+        <a href="{{ route('pantsize.index') }}" class="btn btn-primary rounded-pill mt-4 ml-3"> Back To List</a>
     </div>
     <div class="container">
         <div class="text-right">
@@ -50,22 +50,16 @@
                     <div class="text-center mt-5">
 
                         <h5 style="font-size: 27px;">
-                            {{ $value->length }} -:لمبائی<br>
-                            {{ $value->tira }} -:تیرا <br>
-                            {{$value->bazu}} -: بازو <br>
-                            {{ $value->gala }} -:گلا <br>
-                            {{ $value->chati }} -:چھاتی<br>
-                            {{ $value->gap }} -:گیپ <br>
-                            {{ $value->kamar }} -:کمر<br>
-                            {{ $value->hip }} -:ہپ<br>
-                            {{ $value->half_back }} -:   ہاف بیک  <br>
-                            {{ $value->cros_back }} -:   کراس بیک    <br>
-                            {{ $value->dola }} -: ڈولا  <br>
-                            {{ $value->side_chaak }} -: سائڈ چاک   <br>
-
-                            {{ $value->napail_size }} -:نپیل سائز <br>
-                            {{ $value->gheri }} -:گھیرا <br>
-                            {{ $value->style }} -:اسٹائل   <br>
+                        {{$value->kamar}} -: کمر <br>
+                        {{$value->hip}} -:  ہپ <br>
+                        {{$value->body}} -:  باڈی <br>
+                        {{$value->thai}} -:  تہائ <br>
+                        {{$value->length}} -: لمبائی <br>
+                        {{$value->goda}} -: گوڈا <br>
+                        {{$value->mori}} -: موری<br>
+                        {{$value->front_pocket}} -: فرنٹ پاکٹ <br>
+                        {{$value->back_pocket}} -: بیک پاکٹ <br>
+                        {{$value->pancha}} -: پانچہ <br>
                             
 
                             

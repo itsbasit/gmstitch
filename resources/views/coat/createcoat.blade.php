@@ -23,6 +23,21 @@
                         @csrf
 
                         <div class="form-group col-lg-4">
+                            <label for="">Customer ID <i class="fas fa-ruler"></i></label>
+                            <input type="text" placeholder="enter customer ID" name="customerID" class="form-control">
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for="">Name <i class="fas fa-ruler"></i></label>
+                            <input type="text" placeholder="Customer Name" name="name" class="form-control">
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for="">Mobile <i class="fas fa-ruler"></i></label>
+                            <input type="text" placeholder="Mobile" name="mobile" class="form-control">
+                        </div>
+
+                        <div class="form-group col-lg-4">
                         <label for="">Type <i class="fas fa-ruler"></i></label>
                         <select name="type" class="form-control custom-slect">
                         <option value="کوٹ "> کوٹ </option>

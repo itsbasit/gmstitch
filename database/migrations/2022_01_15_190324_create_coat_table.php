@@ -16,6 +16,9 @@ class CreateCoatTable extends Migration
         Schema::create('coat', function (Blueprint $table) {
             $table->id();
             $table->string('type')->nullable();
+            $table->integer('customerID')->nullable();
+            $table->string('name')->nullable();
+            $table->text('mobile')->nullable();
             $table->string('length')->nullable();
             $table->string('tira')->nullable();
             $table->string('bazu')->nullable();
