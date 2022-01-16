@@ -1,19 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invoice</title>
-</head>
-<body>
+@extends('admin.layouts.master')
+@section('title', 'WaistCoat Print Record')
+
+@section('css')
+<style>
+@media print {
+    .footer,
+    #non-printable {
+        display: none !important;
+    }
+    #printable {
+        display: block;
+    }
+}
+</style>
+@endsection
+
+@section('content')
+
+<div>
+        <a href="{{ route('invoice.index') }}" class="btn btn-primary rounded-pill mt-4 ml-3"> Back To List</a>
+    </div>
+    <div class="container">
+        <div class="text-right">
+            <a href="" class="btn btn-danger p-2" onclick="window.print()">Print File</a>
+        </div>
+
+    </div>
+            <div class="img-responsive text-center mb-3">
+        <img src="{{ asset('/brandlogo.png') }}" alt="registerlogo" width="200" height="200">
+        </div>
+        
 
 <table width="80%" border="0" style="margin-left:auto;margin-right:auto; margin-top:5%" cellspacing="0" cellpadding="0">
   
 <tr>
 <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:15px;">
 <h2>Thank you for Shopping</h2>
-<img src="https://gmstitch.com/brandlogo.png" style="width:100px  "/></td>
   </tr>
 
   <tr>
@@ -95,6 +117,10 @@
   </tr>
 
 </table>
-    
-</body>
-</html>
+
+ 
+@endsection
+
+@section('scripts')
+
+@endsection

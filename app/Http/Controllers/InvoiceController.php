@@ -25,7 +25,7 @@ class InvoiceController extends Controller
                 ->addColumn('action', function($row){
                     $btn ='&nbsp;<a href="javascript:void(0)" data-id="'.$row->id.'" class=" btn btn-danger btn-sm  dlt">Delete <i class="fas fa-trash-alt"></i></a>';
                     $btn .= '&nbsp;<a href="invoice/'.$row->id.'/edit" class="btn btn-success btn-sm showbtn">Update <i class="fas fa-file-alt"></i></a>';
-                    $btn .= '&nbsp;<a href="downloadinvoice/'.$row->id.'" class="btn btn-success btn-sm showbtn">Print <i class="fas fa-file-alt"></i></a>';
+                    $btn .= '&nbsp;<a href="invoice/'.$row->id.'" class="btn btn-success btn-sm showbtn">Print <i class="fas fa-file-alt"></i></a>';
                     return $btn;
                 })
                 ->rawColumns(['action'])
@@ -81,7 +81,9 @@ class InvoiceController extends Controller
      */
     public function show($id)
     {
-        //
+        $data = InvoiceModel::find($id);
+
+        return view('invoicepdf', $data);
     }
 
     /**

@@ -109,9 +109,10 @@
                         <div class="form-group col-lg-4">
                         <label for="">نپیل سائز <i class="fas fa-ruler"></i></label>
                         <select name="napail_size" class="form-control custom-slect">
-                        <option value="کوٹ "> کوٹ </option>
-                        <option value="پرنس کوٹ "> پرنس کوٹ </option>
-                        <option value="شیروانی"> شیروانی</option>   
+                        <option value="1/2''"> 1/2'' </option>
+                        <option value="1/3''"> 1/3'' </option>
+                        <option value="3''"> 3'' </option>
+                        <option value="3.15''"> 3.15'' </option>
                         </select>
                         </div>
 
