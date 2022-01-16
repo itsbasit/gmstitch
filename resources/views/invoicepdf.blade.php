@@ -13,7 +13,7 @@
 <tr>
 <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:15px;">
 <h2>Thank you for Shopping</h2>
-<img src="https://gmstitch.com/brandlogo.png" style="width:100px"/></td>
+<img src="https://gmstitch.com/brandlogo.png" style="width:100px  "/></td>
   </tr>
 
   <tr>
