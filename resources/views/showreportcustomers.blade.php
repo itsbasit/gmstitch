@@ -150,7 +150,7 @@
                                  تیار 1 :-  {{$value->tayar1}} <br>
              تیار 2 :-  {{$value->tayar2}} <br>
               تیار 3:- {{$value->tayar3}} <br>
-               تیار 4 :- {{$value->tayar4}} <br>
+               
 
                     {{-- {{ $value->silai }} -:سلائی<br> --}}
 
@@ -204,22 +204,7 @@
                     $value->currentdate = date('d-m-Y', strtotime($value->currentdate));
                     $value->returndate = date('d-m-Y', strtotime($value->returndate));
                 @endphp
-                <tr>
-                    <h5 class="text-center text-dark bg-white w-40 mt-5">
-
-                        <td>
-                            <img src="{{ asset('/brandlogo.png') }}" alt="registerlogo" width="100" height="100">
-                        </td> <br>
-                        <td> Customer ID:{{ $value->id }}</td> <br>
-                        <td> NAME: {{ $value->name }}</td> <br>
-                        
-                        <td><i class="far fa-calendar-plus"></i> {{ $value->currentdate }}</td> <br>
-                        <td><i class="fas fa-calendar-check"></i> {{ $value->returndate }}</td> <br>
-                        <td>Advance Given: {{ $value->advance }}</td> <br>
-                        <td> Remaining Balance: {{ $value->total_price }}</td> <br>
-                        <td> <i> THANK YOU FOR SHOPPING</i></td>
-                    </h5>
-                </tr>
+                
             @endforeach
             {{-- </tbody>
         </table> --}}
