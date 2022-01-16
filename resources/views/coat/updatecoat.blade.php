@@ -112,8 +112,8 @@
                         <label for="">نپیل سائز <i class="fas fa-ruler"></i></label>
                         <select name="napail_size" class="form-control custom-slect">
                         <option value="{{$data->napail_size}}" selected> {{$data->napail_size}} </option>
-                        <option value="1/2''"> 1/2'' </option>
-                        <option value="1/3''"> 1/3'' </option>
+                        <option value="2 1/2''">2 1/2'' </option>
+                        <option value="2 1/3''">2 1/3'' </option>
                         <option value="3''"> 3'' </option>
                         <option value="3.15''"> 3.15'' </option>
                         </select>
