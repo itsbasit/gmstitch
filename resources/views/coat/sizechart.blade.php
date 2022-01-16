@@ -40,12 +40,12 @@
 
     <div class="container" style="height: 600px;">
         <div class="row">
-            <div class="col-sm-6">
+            <!-- <div class="col-sm-6">
                 <img src="{{ asset('/smtailors.png') }}" alt="registerlogo" width="330" height="450"
                     class="img-responsive text-center mt-5">
-            </div>
+            </div> -->
             
-            <div class="col-sm-6">
+            <div class="col-sm-6 offset-md-3">
                 @foreach ($data as $value)
                     <div class="text-center mt-5">
 

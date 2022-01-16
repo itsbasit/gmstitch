@@ -161,6 +161,29 @@
                 </ul>
             </li>
 
+            <li class="nav-item bg-danger text-warning">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-users"></i>
+                    <p>
+                        Shirt
+                        <i class="fas fa-angle-left right"></i>
+                        {{-- <span class="badge badge-info right">6</span> --}}
+                    </p>
+                </a>
+                <ul class="nav nav-treeview bg-info text-white">
+
+                    <li class="nav-item menu-open bg-warning">
+                        <a href="{{ route('shirt.index') }}" class="nav-link">
+                            <i class="nav-icon fas fa-address-card"></i>
+
+                            <p>
+                                Shirt
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
 
             <li class="nav-item bg-primary text-warning">
                 <a href="#" class="nav-link">

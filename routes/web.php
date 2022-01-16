@@ -14,6 +14,7 @@ use App\Http\Controllers\DownloadInvoice;
 use App\Http\Controllers\WaistcoatController;
 use App\Http\Controllers\PantSizeController;
 use App\Http\Controllers\CoatController;
+use App\Http\Controllers\ShirtController;
 
 
 /*
@@ -50,8 +51,7 @@ Route::get('/downloadinvoice/{id}',[DownloadInvoice::class,'index']);
 Route::resource('waistcoat', WaistcoatController::class);
 Route::resource('pantsize', PantSizeController::class);
 Route::resource('coat', CoatController::class);
-
-
+Route::resource('shirt',ShirtController::class);
 Route::resource('stock', StockController::class);
 Route::resource('stockcustomer', CustomerstockController::class);
 Route::resource('ledger', LedgerController::class);
