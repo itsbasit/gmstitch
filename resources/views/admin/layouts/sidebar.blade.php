@@ -134,18 +134,6 @@
                             </p>
                         </a>
                     </li>
-
-                    <!-- <li class="nav-item menu-open bg-warning">
-                        <a href="{{ route('invoice.index') }}" class="nav-link">
-                            <i class="nav-icon fas fa-address-card"></i>
-
-                            <p>
-                                Invoice
-                            </p>
-                        </a>
-                    </li> -->
-                   
-
                 </ul>
             </li>
 
@@ -154,7 +142,7 @@
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-users"></i>
                     <p>
-                        Shirt
+                        Pant
                         <i class="fas fa-angle-left right"></i>
                         {{-- <span class="badge badge-info right">6</span> --}}
                     </p>
@@ -162,26 +150,14 @@
                 <ul class="nav nav-treeview bg-info text-white">
 
                     <li class="nav-item menu-open bg-warning">
-                        <a href="{{ route('customer.index') }}" class="nav-link">
+                        <a href="{{ route('pantsize.index') }}" class="nav-link">
                             <i class="nav-icon fas fa-address-card"></i>
 
                             <p>
-                                Shirts Record
+                                Pant Size
                             </p>
                         </a>
                     </li>
-
-                    <li class="nav-item menu-open bg-warning">
-                        <a href="{{ route('invoice.index') }}" class="nav-link">
-                            <i class="nav-icon fas fa-address-card"></i>
-
-                            <p>
-                                Invoice
-                            </p>
-                        </a>
-                    </li>
-                   
-
                 </ul>
             </li>
 
@@ -190,7 +166,7 @@
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-users"></i>
                     <p>
-                        Shirt
+                        Coat
                         <i class="fas fa-angle-left right"></i>
                         {{-- <span class="badge badge-info right">6</span> --}}
                     </p>
@@ -198,24 +174,16 @@
                 <ul class="nav nav-treeview bg-info text-white">
 
                     <li class="nav-item menu-open bg-warning">
-                        <a href="{{ route('customer.index') }}" class="nav-link">
+                        <a href="{{ route('coat.index') }}" class="nav-link">
                             <i class="nav-icon fas fa-address-card"></i>
 
                             <p>
-                                Shirts Record
+                                Coat
                             </p>
                         </a>
                     </li>
 
-                    <li class="nav-item menu-open bg-warning">
-                        <a href="{{ route('invoice.index') }}" class="nav-link">
-                            <i class="nav-icon fas fa-address-card"></i>
-
-                            <p>
-                                Invoice
-                            </p>
-                        </a>
-                    </li>
+                   
                    
 
                 </ul>

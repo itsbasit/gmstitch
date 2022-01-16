@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ShirtController extends Controller
+class PantSizeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class ShirtController extends Controller
      */
     public function index()
     {
-        //
+        return view('pantsize.pantsize');
     }
 
     /**
@@ -23,7 +23,7 @@ class ShirtController extends Controller
      */
     public function create()
     {
-        //
+        return view('pantsize.createpantsize');
     }
 
     /**
@@ -56,7 +56,7 @@ class ShirtController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('pantsize.updatepantsize');
     }
 
     /**
