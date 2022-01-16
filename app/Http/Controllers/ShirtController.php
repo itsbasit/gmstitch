@@ -77,7 +77,7 @@ class ShirtController extends Controller
         $shirt->cuffsize=$request->cuffsize;
         $shirt->moda=$request->moda;
         $shirt->karhai=$request->karhai;
-        $shirt->poncha=$request->poncha;
+        // $shirt->poncha=$request->poncha;
         $shirt->stitcher=$request->stitcher;
         $shirt->tayar1=$request->tayar1;
         $shirt->tayar2=$request->tayar2;
@@ -153,7 +153,7 @@ class ShirtController extends Controller
         $shirt->cuffsize=$request->cuffsize;
         $shirt->moda=$request->moda;
         $shirt->karhai=$request->karhai;
-        $shirt->poncha=$request->poncha;
+        // $shirt->poncha=$request->poncha;
         $shirt->stitcher=$request->stitcher;
         $shirt->tayar1=$request->tayar1;
         $shirt->tayar2=$request->tayar2;
