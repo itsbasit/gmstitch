@@ -4,8 +4,16 @@
 @section('content')
     <div class="container-fluid">
         <section class="content">
-            <a class="btn btn-primary btn-sm mt-4 rounded-pill p-2" href="{{ route('coat.create') }}"><b>
+    
+    <div class="row">
+        <div class="col">
+        <a class="btn btn-primary btn-sm mt-4 rounded-pill p-2" href="{{ route('coat.create') }}"><b>
                     ADD Coat</b> <i class="fas fa-user-plus"></i></a>
+        </div>    
+        <div class="col">
+        <a href="" class="btn btn-success mt-4 rounded-pill p-2" style="float:right" onclick="window.print()">Print File</a>
+        </div>
+        </div>
 
             <!-- Trigger the modal with a button -->
             {{-- <button type="button" class="btn btn-info btn-lg">Open Modal</button> --}}

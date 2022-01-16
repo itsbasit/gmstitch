@@ -1,13 +1,13 @@
 @extends('admin.layouts.master')
 
-@section('title', 'Create Coat')
+@section('title', 'Create PantSize')
 
 @section('content')
-    <a href="{{ route('coat.index') }}"><button class=" ml-3 btn btn-primary btn-sm mt-3 mb-3 rounded-pill p-2">
+    <a href="{{ route('pantsize.index') }}"><button class=" ml-3 btn btn-primary btn-sm mt-3 mb-3 rounded-pill p-2">
             <b>Back To
                 List</b> </button></a>
     <div class="container-fluid ">
-        <h1 class="p-3 "><b>+Create Coat </b><i class="fas fa-user-check"></i></h1>
+        <h1 class="p-3 "><b>+Create PantSize </b><i class="fas fa-user-check"></i></h1>
     </div>
     <br>
 
@@ -17,19 +17,12 @@
                 Featured
             </div> --}}
         <div class="card-body">
-            <form action="{{ route('coat.store') }}" method="post" enctype="multipart/form-data">
+            <form action="{{ route('pantsize.store') }}" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <div class="form-row">
                         @csrf
 
-                        <div class="form-group col-lg-4">
-                        <label for="">Type <i class="fas fa-ruler"></i></label>
-                        <select name="type" class="form-control custom-slect">
-                        <option value="کوٹ "> کوٹ </option>
-                        <option value="پرنس کوٹ "> پرنس کوٹ </option>
-                        <option value="شیروانی"> شیروانی</option>   
-                        </select>
-                        </div>
+                        
 
                         <div class="form-group col-lg-4">
                             <label for="">کمر <i class="fas fa-ruler"></i></label>
@@ -42,6 +35,11 @@
                         </div>
 
                         <div class="form-group col-lg-4">
+                            <label for="">لمبائی <i class="fas fa-ruler"></i></label>
+                            <input type="text" name="length" class="form-control">
+                        </div>
+
+                        <div class="form-group col-lg-4">
                             <label for=""> باڈی  <i class="fas fa-ruler"></i></label>
                             <input type="text" placeholder="Enter Customer Size" name="body" class="form-control">
                         </div>
@@ -50,14 +48,6 @@
                             <label for="">تہائ   <i class="fas fa-ruler"></i></label>
                             <input type="text" placeholder="Enter Customer Size" name="thai" class="form-control">
                         </div>
-                        
-                        
-                        <div class="form-group col-lg-4">
-                            <label for="">لمبائی <i class="fas fa-ruler"></i></label>
-                            <input type="text" name="length" class="form-control">
-                        </div>
-
-                        
 
                         <div class="form-group col-lg-4">
                             <label for="">گوڈا  <i class="fas fa-ruler"></i></label>
@@ -73,40 +63,28 @@
 
                         <div class="form-group col-lg-4">
                             <label for="">فرنٹ پاکٹ  <i class="fas fa-ruler"></i></label>
-                            <input type="text" placeholder="Enter Customer Size" name="pait" class="form-control">
+                           <select class="form-control" name="front_pocket">
+                                <option value="سٹریٹ پاکٹ">سٹریٹ پاکٹ</option>
+                                <option value="کراس پاکٹ">کراس پاکٹ</option>
+                            </select>
                         </div>
 
                         <div class="form-group col-lg-4">
                             <label for="">بیک پاکٹ  <i class="fas fa-ruler"></i></label>
-                            <input type="text" placeholder="Enter Customer Size" name="gap"
-                                class="form-control">
+                            <select class="form-control" name="back_pocket">
+                                <option value="سنگل پاکٹ">سنگل پاکٹ</option>
+                                <option value="ڈبل پاکٹ">ڈبل پاکٹ</option>
+                            </select>
                         </div>
 
-                        
-
-                        
-                        
                         <div class="form-group col-lg-4">
-                            <label for="">گھیرا <i class="fas fa-ruler"></i></label>
-                            <select name="gheri" class="form-control custom-slect">
-                                <option value="گول گھیرا "> گول گھیرا </option>
-                                <option value="سیدھا گھیرا">سیدھا گھیرا </option>
+                            <label for="">پانچہ <i class="fas fa-ruler"></i></label>
+                            <select name="pancha" class="form-control custom-slect">
+                                <option value="ترپائی">ترپائی</option>
+                                <option value="سلائی">سلائی</option>
                                 
                             </select>
                         </div> 
-                       
-
-                        <div class="form-group col-lg-4">
-                            <label for="">ڈیزائن <i class="fas fa-ruler"></i></label>
-                            <input type="text" placeholder="Enter Customer Size" name="design" class="form-control">
-                        </div>
-
-                        <div class="form-group col-lg-4">
-                            <label for="">کڑھائی <i class="fas fa-ruler"></i></label>
-                            <input type="text" placeholder="Enter Customer Size" name="karhai" class="form-control">
-                        </div>
-                       
-
 
                     </div>
             </form>

@@ -1,11 +1,19 @@
 @extends('admin.layouts.master')
-@section('title', 'Coat List')
+@section('title', 'PantSize List')
 
 @section('content')
     <div class="container-fluid">
         <section class="content">
-            <a class="btn btn-primary btn-sm mt-4 rounded-pill p-2" href="{{ route('coat.create') }}"><b>
-                    ADD Coat</b> <i class="fas fa-user-plus"></i></a>
+            <div class="row">
+        <div class="col">
+        <a class="btn btn-primary btn-sm mt-4 rounded-pill p-2" href="{{ route('pantsize.create') }}"><b>
+                    ADD PantSize</b> <i class="fas fa-user-plus"></i></a>
+        </div>    
+        <div class="col">
+        <a href="" class="btn btn-success mt-4 rounded-pill p-2" style="float:right" onclick="window.print()">Print File</a>
+        </div>
+        </div>
+        
 
             <!-- Trigger the modal with a button -->
             {{-- <button type="button" class="btn btn-info btn-lg">Open Modal</button> --}}
@@ -40,7 +48,7 @@
                     <table class="table table-bordered table-striped table-hover text-center" id="myTable">
                         <thead>
                             <tr>
-                                <th><i class="fas fa-list-ol"></i> Type</th>
+                               
                                 <th>کمر <i class="fas fa-tshirt"></i></th>
                                 <th> ہپ <i class="fas fa-tshirt"></i></th>
                                 <th> باڈی <i class="fas fa-tshirt"></i></th>
@@ -69,12 +77,9 @@
                         serverSide: true,
                         responsive: true,
 
-                        ajax: "{{ route('coat.index') }}",
+                        ajax: "{{ route('pantsize.index') }}",
                         columns: [
-                            {
-                                data: 'type',
-                                name: 'type'
-                            },
+                          
                             {
                                 data: 'kamar',
                                 name: 'kamar'
@@ -85,17 +90,17 @@
                             },
 
                             {
-                                data: 'length',
-                                name: 'length'
-                            },
-                            
-                            {
                                 data: 'body',
                                 name: 'body'
                             },
+                            
                             {
                                 data: 'thai',
                                 name: 'thai'
+                            },
+                            {
+                                data: 'length',
+                                name: 'length'
                             },
                             {
                                 data: 'goda',
@@ -134,7 +139,7 @@
                     if (confirm("Are you sure you want to Delete this Customer")) {
                         $.ajax({
                             type: "DELETE",
-                            url: "waistcoat/" + id,
+                            url: "pantsize/" + id,
                             data: {
                                 _token: "{{ csrf_token() }}",
                             },

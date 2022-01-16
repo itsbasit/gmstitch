@@ -54,7 +54,8 @@ class InvoiceController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+{
+    try {
         $invoice= new InvoiceModel;
         $invoice->customerID=$request->customerID;
         $invoice->name=$request->name;
@@ -66,6 +67,10 @@ class InvoiceController extends Controller
 
         $invoice->save();
         return redirect()->route('invoice.index')->with('success', 'Invoice Created Successfully');
+  
+    } catch (\Throwable $error) {
+        return redirect()->route('invoice.index')->with('error','Something went wrong');
+    }    
     }
 
     /**

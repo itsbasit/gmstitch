@@ -10,6 +10,12 @@
 
 <table width="80%" border="0" style="margin-left:auto;margin-right:auto; margin-top:5%" cellspacing="0" cellpadding="0">
   
+<tr>
+<td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:15px;">
+<h2>Thank you for Shopping</h2>
+<img src="https://gmstitch.com/brandlogo.png" style="width:100px"/></td>
+  </tr>
+
   <tr>
     <td colspan="2"> </td>
   </tr>
@@ -44,7 +50,6 @@
       </tr>
     </table></td>
     <td width="51%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-  
       <tr>
         <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px;" align="right"></td>
       </tr>
@@ -52,16 +57,14 @@
         <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px;"  align="right"> </td>
       </tr>
       <tr>
-        <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px;"  align="right">Invoice Date : {{date("Y/m/d")}}</td>
+        <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:16px;"  align="right">Invoice Date : {{date("Y/m/d")}}</td>
+      </tr>
+
+      <tr>
+        <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:16px;" align="right">{{$name}}</td>
       </tr>
       <tr>
-        <td style="font-family:Verdana, Geneva, sans-serif; font-weight:600; font-size:15px;" align="right">Payer</td>
-      </tr>
-      <tr>
-        <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px;" align="right">{{$name}}</td>
-      </tr>
-      <tr>
-        <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:13px;" align="right">Customer ID {{$customerID}}</td>
+        <td style="font-family:Verdana, Geneva, sans-serif; font-weight:300; font-size:16px;" align="right">Customer ID {{$customerID}}</td>
       </tr>
       
     </table></td>
