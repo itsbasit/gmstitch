@@ -15,7 +15,7 @@
             <!-- <div class="card mt-4" style=" border-radius: 50px;border-width: 6px;border-color: blue;"> -->
             <div class="card mt-4 p-3">
                 <div class="card-header">
-                    <h1 class="mt-3 "><b>Coat</b> <i class="fas fa-user-friends"></i></h1>
+                    <h1 class="mt-3 "><b>Coat List</b> <i class="fas fa-user-friends"></i></h1>
 
                     <div class="mt-3">
 
