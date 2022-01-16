@@ -1,5 +1,5 @@
 @extends('admin.layouts.master')
-@section('title', 'Customer Print Record')
+@section('title', 'Coat Print Record')
 
 @section('css')
 <style>
@@ -17,7 +17,7 @@
 
 @section('content')
     <div>
-        <a href="{{ route('customer.index') }}" class="btn btn-primary rounded-pill mt-4 ml-3"> Back To List</a>
+        <a href="{{ route('coat.index') }}" class="btn btn-primary rounded-pill mt-4 ml-3"> Back To List</a>
     </div>
     <div class="container">
         <div class="text-right">

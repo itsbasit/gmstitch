@@ -16,6 +16,8 @@ class CreateWaistcoatTable extends Migration
         Schema::create('waistcoat', function (Blueprint $table) {
             $table->id();
             $table->integer('customerID')->nullable();
+            $table->string('name')->nullable();
+            $table->text('mobile')->nullable();
             $table->string('length')->nullable();
             $table->string('tira')->nullable();
             $table->string('gala')->nullable();

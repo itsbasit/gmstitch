@@ -24,8 +24,8 @@ class WaistcoatController extends Controller
                 ->addIndexColumn()
                 ->addColumn('action', function($row){
                     $btn ='&nbsp;<a href="javascript:void(0)" data-id="'.$row->id.'" class=" btn btn-danger btn-sm  dlt">Delete <i class="fas fa-trash-alt"></i></a>';
-                    $btn .= '&nbsp;<a href="waistcoat/'.$row->id.'/edit" class="btn btn-success btn-sm showbtn">Update <i class="fas fa-file-alt"></i></a>';
-                    // $btn .= '&nbsp;<a href="downloadinvoice/'.$row->id.'" class="btn btn-success btn-sm showbtn">Print <i class="fas fa-file-alt"></i></a>';
+                    $btn .= '&nbsp;<a href="waistcoat/'.$row->id.'/edit" class="btn btn-success btn-sm showbtn">Update <i class="fas fa-file-alt"></i></a><br>';
+                    $btn .= '&nbsp;<a href="waistcoat/'.$row->id.'" class="btn btn-success btn-sm showbtn">Size Chart <i class="fas fa-file-alt"></i></a>';
                     return $btn;
                 })
                 ->rawColumns(['action'])
@@ -55,6 +55,8 @@ class WaistcoatController extends Controller
     {
         $coat = new WaistCoatModel;
         $coat->customerID = $request->customerID;
+        $coat->name = $request->name;
+        $coat->mobile = $request->mobile;
         $coat->length = $request->lambai;
         $coat->tira = $request->tira;
         $coat->gala = $request->gala;
@@ -80,7 +82,8 @@ class WaistcoatController extends Controller
      */
     public function show($id)
     {
-        //
+        $data = WaistCoatModel::where('id', '=', $id)->get();
+        return view('waistcoatchart', compact('data'));
     }
 
     /**
@@ -107,6 +110,8 @@ class WaistcoatController extends Controller
     {
         $coat = WaistCoatModel::find($id);
         $coat->customerID = $request->customerID;
+        $coat->name = $request->name;
+        $coat->mobile = $request->mobile;
         $coat->length = $request->lambai;
         $coat->tira = $request->tira;
         $coat->gala = $request->gala;

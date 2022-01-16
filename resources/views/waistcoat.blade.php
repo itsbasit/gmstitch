@@ -47,6 +47,8 @@
                         <thead>
                             <tr>
                                 <th><i class="fas fa-list-ol"></i> Customer ID</th>
+                                <th><i class="fas fa-list-ol"></i> Name</th>
+                                <th><i class="fas fa-list-ol"></i> Mobile</th>
                                 <th>لمبائی <i class="fas fa-tshirt"></i></th>
                                 <th>تیرا<i class="fas fa-tshirt"></i></th>
                                 <th>گلا <i class="fas fa-tshirt"></i></th>
@@ -81,6 +83,14 @@
                             {
                                 data: 'customerID',
                                 name: 'customerID'
+                            },
+                            {
+                                data: 'name',
+                                name: 'name'
+                            },
+                            {
+                                data: 'mobile',
+                                name: 'mobile'
                             },
                             {
                                 data: 'length',

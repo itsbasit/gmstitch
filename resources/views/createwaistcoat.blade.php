@@ -25,6 +25,16 @@
                             <label for="">ID <i class="fas fa-user-tie"></i></label>
                             <input type="number" placeholder="Enter Customer ID" name="customerID" required class="form-control">
                         </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for="">Name <i class="fas fa-user-tie"></i></label>
+                            <input type="text" placeholder="Enter Customer Name" name="name" required class="form-control">
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for="">Mobile <i class="fas fa-user-tie"></i></label>
+                            <input type="text" placeholder="Enter Customer Mobile" name="mobile" required class="form-control">
+                        </div>
                       
 
                      

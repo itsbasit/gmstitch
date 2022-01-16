@@ -74,8 +74,12 @@ class PantSizeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
-        //
+    {   
+            $data = PantSizeModel::where('id', '=', $id)->get();
+
+            // dd($data[0]->type1);
+            //    $data = Customer::find($id)->all();
+                return view('showreportcustomers', compact('data'));
     }
 
     /**
