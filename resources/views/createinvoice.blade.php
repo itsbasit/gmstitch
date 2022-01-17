@@ -22,13 +22,25 @@
                 <div class="form-group">
                     <div class="form-row">
                         @csrf
+
+                        <div class="form-group col-lg-6">
+                            <label for="">Invoice For? <i class="fas fa-user-tie"></i></label>
+                            <select id="invoice_for" name="invoice_for" class="form-control">
+                            <option>--Select One--</option>
+                            <option value="customer">Customer</option>
+                            <option value="waistcoat">WaistCoat</option>
+                            <option value="pant">Pant Size</option>
+                            <option value="shirt">Shirt</option>
+                            <option value="coat">Coat</option>
+                            </select>
+                        </div>
+
+
                         <div class="form-group col-lg-6">
                             <label for="">Customer ID <i class="fas fa-user-tie"></i></label>
-                            <select id="customerID" name="customerID" class="form-control">
+                            <select id="customerID" name="customerID" class="form-control" required>
                             <option>--Select Customer ID--</option>
-                            @foreach($data as $id)
-                            <option value="{{$id->customerID}}">{{$id->customerID}}</option>
-                            @endforeach
+                           
                             </select>
                         </div>
 
@@ -84,23 +96,55 @@
 @section('scripts')
     <script>
         $("#customerID").on('change', function(){
-
             var customerID = this.value;
-            // console.log('customerID', customerID);
 
             let _url = '/getCustomer';
             let _token   = $('meta[name="csrf-token"]').attr('content');
-
+            let type = $("#invoice_for").val();
             
             $.ajax({
             type: "POST",
             url: _url,
             data: {
                 id:customerID,
+                type:type,
                 _token: _token
             },
             success: function (response) {
              $("#name").val(response);
+            },
+            // error: function (data) {
+            //     console.log(data);
+            // }
+        });
+        })
+
+
+        $("#invoice_for").on('change', function(){
+            var type = this.value;
+            // alert(type);
+            let _url = '/getinvoice';
+            let _token   = $('meta[name="csrf-token"]').attr('content');
+
+            $.ajax({
+            type: "POST",
+            url: _url,
+            data: {
+                type:type,
+                _token: _token
+            },
+            success: function (response) { 
+                if(response == 'empty'){
+                    $('#customerID').html('<option>--Select Customer ID--</option>');
+                    alert('Not customer found for this category');
+                } else {
+                $('#customerID').html('<option>--Select Customer ID--</option>');
+                $('#customerID').append($('<option>', { 
+                value: response,
+                text : response 
+                }));
+                }
+               
             },
             // error: function (data) {
             //     console.log(data);

@@ -10,7 +10,7 @@ use App\Http\Controllers\CustomerstockController;
 use App\Http\Controllers\LedgerController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\fetchCustomer;
-use App\Http\Controllers\DownloadInvoice;
+use App\Http\Controllers\GetInvoiceController;
 use App\Http\Controllers\WaistcoatController;
 use App\Http\Controllers\PantSizeController;
 use App\Http\Controllers\CoatController;
@@ -38,16 +38,19 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-// Route::group(['middleware' => 'auth'], function () {
+Route::group(['middleware' => 'auth'], function () {
 
 Route::resource('employee', EmployeeController::class);
 Route::resource('employeerecord', EmployeeRecordController::class);
 Route::get('customer/edit1', [CustomerController::class, 'edit1']);
 Route::post('/getCustomer', [fetchCustomer::class,'index']);
+Route::post('/getinvoice', [fetchCustomer::class,'getInvoice']);
 
 Route::resource('customer', CustomerController::class);
 Route::resource('invoice', InvoiceController::class);
-Route::get('/downloadinvoice/{id}',[DownloadInvoice::class,'index']);
+// Route::post('getInvoice', InvoiceController::class, 'getInvoice');
+// Route::get('/downloadinvoice/{id}',[DownloadInvoice::class,'index']);
+// Route::post('/getinvoice',[GetInvoiceController::class,'index']);
 Route::resource('waistcoat', WaistcoatController::class);
 Route::resource('pantsize', PantSizeController::class);
 Route::resource('coat', CoatController::class);
@@ -57,4 +60,4 @@ Route::resource('stockcustomer', CustomerstockController::class);
 Route::resource('ledger', LedgerController::class);
 Route::resource('order', OrderController::class);
 
-// });
+});

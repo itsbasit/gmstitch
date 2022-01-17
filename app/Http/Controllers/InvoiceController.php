@@ -42,9 +42,15 @@ class InvoiceController extends Controller
      */
     public function create()
     {
-
+        // echo $type;
         $data = Customer::get(['customerID']);
         return view('createinvoice', compact('data'));
+    }
+
+
+    public function getInvoice()
+    {
+        echo 'hi there';
     }
 
     /**
