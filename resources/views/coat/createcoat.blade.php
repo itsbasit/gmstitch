@@ -42,7 +42,8 @@
                         <select name="type" class="form-control custom-slect">
                         <option value="کوٹ "> کوٹ </option>
                         <option value="پرنس کوٹ "> پرنس کوٹ </option>
-                        <option value="شیروانی"> شیروانی</option>   
+                        <option value="شیروانی"> شیروانی</option>  
+                        <option value="کوئ نہیں">کوئ نہیں</option> 
                         </select>
                         </div>
 
@@ -113,6 +114,7 @@
                         <option value="2 1/3''">2 1/3'' </option>
                         <option value="3''"> 3'' </option>
                         <option value="3.15''"> 3.15'' </option>
+                        <option value="کوئ نہیں">کوئ نہیں</option>
                         </select>
                         </div>
 
@@ -121,7 +123,7 @@
                             <select name="gheri" class="form-control custom-slect">
                                 <option value="گول گھیرا "> گول گھیرا </option>
                                 <option value="سیدھا گھیرا">سیدھا گھیرا </option>
-                                
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                             </select>
                         </div> 
 
@@ -131,7 +133,18 @@
                                 <option value="پیک نپیل">پیک نپیل</option>
                                 <option value="نوچ نپیل">نوچ نپیل</option>
                                 <option value="ڈبل پریس">ڈبل پریس </option>
-                                
+                                <option value="کوئ نہیں">کوئ نہیں</option>
+                            </select>
+                        </div> 
+
+                        <div class="form-group col-lg-4">
+                            <label for="">بٹن <i class="fas fa-ruler"></i></label>
+                            <select name="button" class="form-control custom-slect">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                             </select>
                         </div> 
 

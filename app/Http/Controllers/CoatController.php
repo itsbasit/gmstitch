@@ -70,6 +70,7 @@ class CoatController extends Controller
         $coat->side_chaak = $request->side_chaak;
         $coat->napail_size = $request->napail_size;
         $coat->gheri = $request->gheri;
+        $coat->button = $request->button;
         $coat->style = $request->style;
 
         $coat->save();
@@ -130,6 +131,7 @@ class CoatController extends Controller
         $coat->side_chaak = $request->side_chaak;
         $coat->napail_size = $request->napail_size;
         $coat->gheri = $request->gheri;
+        $coat->button = $request->button;
         $coat->style = $request->style;
         $coat->update();
 

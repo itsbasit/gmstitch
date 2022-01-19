@@ -7,7 +7,7 @@
             <b>Back To
                 List</b> </button></a>
     <div class="container-fluid ">
-        <h1 class="p-3 "><b>+Create Customer </b><i class="fas fa-user-check"></i></h1>
+        <h1 class="p-3 "><b>+Create WaistCoat </b><i class="fas fa-user-check"></i></h1>
     </div>
     <br>
 
@@ -86,6 +86,7 @@
                         <select name="bain" class="form-control custom-slect">
                         <option value="گول "> گول </option>
                         <option value="چورس "> چورس </option>
+                        <option value="کوئ نہیں">کوئ نہیں</option>
                         </select>
                         </div>
 
@@ -96,9 +97,11 @@
                             <select name="gheri" class="form-control custom-slect">
                                 <option value="گول گھیرا "> گول گھیرا </option>
                                 <option value="سیدھا گھیرا">سیدھا گھیرا </option>
-                                
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                             </select>
                         </div> 
+
+                        
                        
 
                         <div class="form-group col-lg-4">

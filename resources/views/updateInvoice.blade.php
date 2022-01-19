@@ -50,11 +50,7 @@
                             <input type="date" placeholder="Enter stitcher Name" name="returndate" class="form-control" value={{$invoice->deliveryDate}}>
                         </div>
 
-                       <div class="form-group col-lg-6">
-                            <label for="">Rack <i class="fas fa-calendar-check"></i></label>
-                            <input type="number" placeholder="Enter stitcher Name" name="rack" class="form-control"
-                                required value={{$invoice->rack}}>
-                        </div>
+                      
 
                         <div class="form-group col-lg-6">
                             <label for="">ADVANCE <i class="fas fa-money-bill-wave"></i></label>

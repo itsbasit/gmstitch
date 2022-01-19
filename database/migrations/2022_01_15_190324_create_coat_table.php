@@ -33,6 +33,7 @@ class CreateCoatTable extends Migration
             $table->string('side_chaak')->nullable();
             $table->string('napail_size')->nullable();
             $table->string('gheri')->nullable();
+            $table->string('button')->nullable();
             $table->string('style')->nullable();
             $table->timestamps();
         });

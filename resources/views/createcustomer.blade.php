@@ -133,9 +133,9 @@
                         <label for="">شلوار پاکٹ <i class="fas fa-ruler"></i></label>
                         <select name="shalwarpocket" class="form-control custom-select" id="">
                         <option value="" disabled selected hidden> شلوار پاکٹ</option>
-                        <option value="ہاں ">ہاں </option>
-                                
+                        <option value="ہاں ">ہاں </option> 
                         <option value="نہیں">نہیں</option>
+
                         </select>
                         </div>
 
@@ -152,6 +152,7 @@
                                 <option value="سلائیوں والا پاہنچہ ">سلائیوں والا پاہنچہ  </option>
                                 <option value="ترکاشی پاہنچہ ">تارکشی ہغنچہ  </option>
                                 <option value=" سلائی کانٹا10  ">10 سلائی کانٹا </option>
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                             </select>
                         </div>
 
@@ -160,7 +161,7 @@
                            <select name="calar" class="form-control" >
                         <option value=" کالر سادہ">کالر سادہ</option>
                         <option value="کالر فرنچ ">کالر فرنچ </option>
-                        <option value=" نہیں"> نہیں</option>
+                        <option value="کوئ نہیں">کوئ نہیں</option>
                            </select>
                         </div>
 
@@ -177,7 +178,7 @@
                         <option value=" فل بین گول"> فل بین گول</option>
                         <option value=" فل بین چورس"> فل بین چورس</option>
                         <option value=" مگزی گلا"> مگزی گلا</option>
-                        <option value="کوئی بھی نہیں">کوئی بھی نہیں</option>
+                        <option value="کوئ نہیں">کوئ نہیں</option>
                         </select>
                         </div>
 
@@ -189,7 +190,7 @@
                         <option value=" سیدھے کف"> سیدھے کف </option>
                         <option value="ڈبل کف "> ڈبل کف </option>
                         <option value="اوپن بازو "> اوپن بازو </option>
-                        <option value="کوئی بھی نہیں">کوئی بھی نہیں</option>
+                        <option value="کوئ نہیں">کوئ نہیں</option>
                         </select>
                         </div>
                         
@@ -197,10 +198,11 @@
                             <label for="">کف سائز <i class="fas fa-ruler"></i></label>
                             <!-- <input type="text" placeholder="Enter Customer Size" name="cuff1" class="form-control"> -->
                         <select name="cuffsize" class="form-control custom-slect">
-                        <option value="کف چوڑائی 2 ">کف چوڑائی 2 </option>
-                                <option value="کف چوڑائی 3 ">کف چوڑائی 3 </option>
-                                <option value="کف چوڑائی 1/2 2">کف چوڑائی 1/2 2 </option>
-                                <option value=" کف چوڑائی 1/4 2">کف چوڑائی  1/4 2 </option>
+                                <option value="2">2</option>
+                                <option value="2 1/4">2 1/4</option>
+                                <option value="2 1/2">2 1/2</option>
+                                <option value="3">3</option>
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                         </select>
                         </div> 
 
@@ -209,6 +211,7 @@
                             <select name="gheri" class="form-control custom-slect">
                                 <option value="گول گھیرا "> گول گھیرا </option>
                                 <option value="سیدھا گھیرا">سیدھا گھیرا </option>
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                                 
                             </select>
                         </div> 
@@ -223,6 +226,7 @@
                                 <option value="گم پٹی1 1/4"">  1 1/4" گم پٹی </option>
                                 <option value="گم پٹی1 1/2">1 1/2 گم پٹی </option>
                                 <option value="گم پٹی 3/4"> 3/4گم پٹی </option>
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                                 
                             </select>
                         </div>  
@@ -235,6 +239,7 @@
                             <select name="silai" class="form-control custom-slect">
                                 <option value="مکمل تین سلائی  ">مکمل تین سلائی </option>
                                 <option value="مکمل ڈبل سلائی">مکمل ڈبل سلائی </option>
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                                 
                             </select>
                         </div>
@@ -243,6 +248,7 @@
                             <select name="side_pocket" class="form-control custom-slect">
                                 <option value="1"> 1 </option>
                                 <option value="2"> 2 </option>
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                                 
                             </select>
                         </div>
@@ -251,6 +257,7 @@
                             <select name="front_pocket" class="form-control custom-slect">
                                 <option value="1"> 1 </option>
                                 <option value="2"> 2 </option>
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                                 
                             </select>
                         </div>  
@@ -271,8 +278,8 @@
                             <label for="">ڈراپ کندھے <i class="fas fa-ruler"></i></label>
                             <select name="downshoulder" class="form-control custom-select" id="">
                                 <option value="" disabled selected hidden> ڈراپ کندھے</option>
-                                <option value="YES">YES</option>
-                                <option value="NO">NO</option>
+                                <option value="ہاں">ہاں</option>
+                                <option value="نہیں">نہیں</option>
                             </select>
                         </div>
 

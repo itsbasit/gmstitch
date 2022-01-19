@@ -19,7 +19,6 @@ class CreateInvoiceTable extends Migration
 		$table->string('name')->nullable();
 		$table->date('bookingDate')->nullable();
 		$table->date('deliveryDate')->nullable();
-		$table->string('rack')->nullable();
 		$table->string('advance')->nullable();
 		$table->string('discount')->nullable();
         $table->timestamps();

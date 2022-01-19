@@ -136,34 +136,22 @@
             <div class="col-sm-4 mt-5">
                 @foreach ($data as $value)
              <h5 style="font-size: 27px;">
-                <!--کالر :-  {{ $value->calar }} <br>-->
-                <!--  بین :- {{ $value->bain }}  <br>-->
-                <!-- کف :-  {{ $value->cuff }} <br>-->
-                  {{ $value->cuff1 }} -:کف سائز<br>
-                    {{-- {{ $value->gheri }} -:گھیرا<br> --}}
-                  آضافی :- {{ $value->patti }}  <br>
-                    {{ $value->moda }} -:موڈا<br>
-                    {{ $value->konisize }} -: کونی سائز<br>
-                    {{-- {{ $value->downshoulder }} -:ڈراپ کندھے<br> --}}
-                    {{ $value->design }} -:ڈیزائن<br>
-                    {{ $value->karhai }} -:کڑھائی<br>
-                                 تیار 1 :-  {{$value->tayar1}} <br>
-             تیار 2 :-  {{$value->tayar2}} <br>
-              تیار 3:- {{$value->tayar3}} <br>
-               
-
-                    {{-- {{ $value->silai }} -:سلائی<br> --}}
-
-
-
-
-
-
-
-                    {{-- {{ $value->pocket }} -:پاکٹ<br> --}}
-
-                   
-
+                کالر :-  {{ $value->calar }} <br>
+                 بین :- {{ $value->bain }}  <br>
+                کف :-  {{ $value->cuff }} <br>
+                گھیرا :- {{ $value->gheri }} <br>
+                فرنٹ پاکٹ :- {{$value->front_pocket}} <br>
+                <!-- {{$value->front_pocket}} <br> -->
+                سائیڈ پاکٹ :- {{$value->side_pocket}} <br>
+                فرنٹ پٹی :- {{$value->patti}} <br>
+                موڈا :- {{$value->moda}} <br>
+                کونی سائز :- {{$value->konisize}} <br>
+                {{$value->side_chaak}} <br>
+                ڈراپ کندھے :- {{$value->downshoulder}} <br>
+                ڈیزائن :- {{$value->design}} <br>
+                کڑھائی :- {{$value->karhai}} <br>
+        
+            
 </h5>
                 @endforeach
             </div>
@@ -182,10 +170,10 @@
                             {{ $value->hip }} -:ہپ<br>
                             <hr style="height:1px;border:none;color:#333;background-color:#333;">
                             {{ $value->shalwarlength }}-: شلوارلمبائی<br>
-                            {{ $value->poncha }} شلوار پانچہ <br>
-                            <!--{{ $value->shalwarpocket }} -:شلوار پاکٹ<br>-->
+                            {{ $value->poncha }} -:شلوار پانچہ <br>
+                             {{$value->shalwarpocket}} -: شلوار پاکٹ
                             {{ $value->shalwarghera }} -:شلوار گہیرا<br>
-                            شلوار پانچہ :-{{ $value->poncha2 }} <br>
+                            
 
                         </h5>
                     </div>

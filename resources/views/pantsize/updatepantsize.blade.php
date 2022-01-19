@@ -80,6 +80,7 @@
                                <option value="{{$data->front_pocket}}" selected>{{$data->front_pocket}}</option>
                                 <option value="سٹریٹ پاکٹ">سٹریٹ پاکٹ</option>
                                 <option value="کراس پاکٹ">کراس پاکٹ</option>
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                             </select>
                         </div>
 
@@ -89,6 +90,7 @@
                             <option value="{{$data->back_pocket}}" selected>{{$data->back_pocket}}</option>
                                 <option value="سنگل پاکٹ">سنگل پاکٹ</option>
                                 <option value="ڈبل پاکٹ">ڈبل پاکٹ</option>
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                             </select>
                         </div>
 
@@ -98,6 +100,7 @@
                             <option value="{{$data->pancha}}" selected>{{$data->pancha}}</option>
                                 <option value="ترپائی">ترپائی</option>
                                 <option value="سلائی">سلائی</option>
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                                 
                             </select>
                         </div> 

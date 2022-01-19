@@ -85,7 +85,7 @@
                            <select name="calar" class="form-control" >
                         <option value=" کالر سادہ">کالر سادہ</option>
                         <option value="کالر فرنچ ">کالر فرنچ </option>
-                        <option value=" نہیں"> نہیں</option>
+                        <option value="کوئ نہیں">کوئ نہیں</option>
                            </select>
                         </div>
 
@@ -102,7 +102,7 @@
                         <option value=" فل بین گول"> فل بین گول</option>
                         <option value=" فل بین چورس"> فل بین چورس</option>
                         <option value=" مگزی گلا"> مگزی گلا</option>
-                        <option value="کوئی بھی نہیں">کوئی بھی نہیں</option>
+                        <option value="کوئ نہیں">کوئ نہیں</option>
                         </select>
                         </div>
 
@@ -114,7 +114,7 @@
                         <option value=" سیدھے کف"> سیدھے کف </option>
                         <option value="ڈبل کف "> ڈبل کف </option>
                         <option value="اوپن بازو "> اوپن بازو </option>
-                        <option value="کوئی بھی نہیں">کوئی بھی نہیں</option>
+                        <option value="کوئ نہیں">کوئ نہیں</option>
                         </select>
                         </div>
                         
@@ -126,6 +126,7 @@
                                 <option value="کف چوڑائی 3 ">کف چوڑائی 3 </option>
                                 <option value="کف چوڑائی 1/2 2">کف چوڑائی 1/2 2 </option>
                                 <option value=" کف چوڑائی 1/4 2">کف چوڑائی  1/4 2 </option>
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                         </select>
                         </div> 
 
@@ -134,7 +135,7 @@
                             <select name="gheri" class="form-control custom-slect">
                                 <option value="گول گھیرا "> گول گھیرا </option>
                                 <option value="سیدھا گھیرا">سیدھا گھیرا </option>
-                                
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                             </select>
                         </div> 
                         <div class="form-group col-lg-4">
@@ -148,7 +149,7 @@
                                 <option value="گم پٹی1 1/4"">  1 1/4" گم پٹی </option>
                                 <option value="گم پٹی1 1/2">1 1/2 گم پٹی </option>
                                 <option value="گم پٹی 3/4"> 3/4گم پٹی </option>
-                                
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                             </select>
                         </div>  
 
@@ -160,7 +161,7 @@
                             <select name="silai" class="form-control custom-slect">
                                 <option value="مکمل تین سلائی  ">مکمل تین سلائی </option>
                                 <option value="مکمل ڈبل سلائی">مکمل ڈبل سلائی </option>
-                                
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                             </select>
                         </div>
                         <div class="form-group col-lg-4">
@@ -168,7 +169,7 @@
                             <select name="side_pocket" class="form-control custom-slect">
                                 <option value="1"> 1 </option>
                                 <option value="2"> 2 </option>
-                                
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                             </select>
                         </div>
                         <div class="form-group col-lg-4">
@@ -176,7 +177,7 @@
                             <select name="front_pocket" class="form-control custom-slect">
                                 <option value="1"> 1 </option>
                                 <option value="2"> 2 </option>
-                                
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                             </select>
                         </div>  
 
@@ -196,8 +197,8 @@
                             <label for="">ڈراپ کندھے <i class="fas fa-ruler"></i></label>
                             <select name="downshoulder" class="form-control custom-select" id="">
                                 <option value="" disabled selected hidden> ڈراپ کندھے</option>
-                                <option value="YES">YES</option>
-                                <option value="NO">NO</option>
+                                <option value="ہاں">ہاں</option>
+                                <option value="نہیں">نہیں</option>
                             </select>
                         </div>
 

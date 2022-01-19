@@ -78,6 +78,7 @@
                            <select class="form-control" name="front_pocket">
                                 <option value="سٹریٹ پاکٹ">سٹریٹ پاکٹ</option>
                                 <option value="کراس پاکٹ">کراس پاکٹ</option>
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                             </select>
                         </div>
 
@@ -86,6 +87,7 @@
                             <select class="form-control" name="back_pocket">
                                 <option value="سنگل پاکٹ">سنگل پاکٹ</option>
                                 <option value="ڈبل پاکٹ">ڈبل پاکٹ</option>
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                             </select>
                         </div>
 
@@ -94,7 +96,7 @@
                             <select name="pancha" class="form-control custom-slect">
                                 <option value="ترپائی">ترپائی</option>
                                 <option value="سلائی">سلائی</option>
-                                
+                                <option value="کوئ نہیں">کوئ نہیں</option>
                             </select>
                         </div> 
 

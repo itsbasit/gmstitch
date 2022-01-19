@@ -46,7 +46,6 @@
                                 <th>Name</th>
                                 <th>Booking Date </th>
                                 <th>Delivery Date</th>
-                                <th>Rack</th>
                                 <th>Advance </th>
                                 <th>Discount</th>
                                 <th>Action</th>
@@ -77,8 +76,7 @@
             {data: 'customerID', name: 'customerID'},
             {data: 'name', name: 'name'},
             {data: 'bookingDate', name: 'bookingDate'},
-            {data: 'deliveryDate', name: 'deliveryDate'},
-            {data: 'rack', name: 'rack'},
+            {data: 'deliveryDate', name: 'deliveryDate'},   
             {data: 'advance', name: 'advance'},
             {data: 'discount', name: 'discount'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
