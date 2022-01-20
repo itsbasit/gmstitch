@@ -67,6 +67,8 @@ class CustomerController extends Controller
         $customer->lambai=$request->lambai;
         $customer->calar=$request->calar;
         $customer->tira=$request->tira;
+        $customer->bazu=$request->bazu;
+        $customer->gala=$request->gala;
         $customer->bain=$request->bain;
         $customer->astin=$request->astin;
         $customer->cuff=$request->cuff;
@@ -88,6 +90,9 @@ class CustomerController extends Controller
         $customer->shalwarpocket=$request->shalwarpocket;
         $customer->shalwarghera=$request->shalwarghera;
         $customer->poncha=$request->poncha;
+        $customer->size_chaak=$request->size_chaak;
+        $customer->front_patti=$request->front_patti;
+        $customer->front_patti_design=$request->front_patti_design;
         // $customer->poncha2=$request->poncha2;
         // $customer->currentdate=$request->currentdate;
         // $customer->returndate=$request->returndate;
@@ -165,6 +170,11 @@ class CustomerController extends Controller
         $customer->lambai=$request->lambai;
         $customer->calar=$request->calar;
         $customer->tira=$request->tira;
+        $customer->bazu=$request->bazu;
+        $customer->gala=$request->gala;
+        $customer->size_chaak=$request->size_chaak;
+        $customer->front_patti=$request->front_patti;
+        $customer->front_patti_design=$request->front_patti_design;
         $customer->bain=$request->bain;
         $customer->astin=$request->astin;
         $customer->cuff=$request->cuff;

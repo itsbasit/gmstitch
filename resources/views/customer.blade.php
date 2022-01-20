@@ -46,6 +46,8 @@
                                 <th>TYPE <i class="fas fa-tshirt"></i></th>
                                 <th>لمبائی <i class="fas fa-tshirt"></i></th>
                                 <th>تیرا<i class="fas fa-tshirt"></i></th>
+                                <th>بازو<i class="fas fa-tshirt"></i></th>
+                                <th>گلا<i class="fas fa-tshirt"></i></th>
                                 <th>آستین <i class="fas fa-tshirt"></i></th>
                                 <th>چھاتی <i class="fas fa-tshirt"></i></th>
                                 <th>پیٹ <i class="fas fa-tshirt"></i></th>
@@ -65,6 +67,9 @@
                                 <th>کف سائز <i class="fas fa-tshirt"></i></th> 
                                 <th>گھیرا <i class="fas fa-tshirt"></i></th>
                                 <th>Patti <i class="fas fa-tshirt"></i></th>
+                                <th>سائزچاک <i class="fas fa-tshirt"></i></th>
+                                <th> فرنٹ پٹی<i class="fas fa-tshirt"></i></th>
+                                <th>فرنٹ پٹی ڈیزائن <i class="fas fa-tshirt"></i></th>
                                 <th>سلائی <i class="fas fa-tshirt"></i></th>
                                 <th> سائیڈ پاکٹ <i class="fas fa-tshirt"></i></th>
                                 <th>فرنٹ پاکٹ <i class="fas fa-tshirt"></i></th>
@@ -133,6 +138,16 @@
                             },
 
                             {
+                                data: 'bazu',
+                                name: 'bazu'
+                            },
+
+                            {
+                                data: 'gala',
+                                name: 'gala'
+                            },
+
+                            {
                                 data: 'astin',
                                 name: 'astin'
                             },
@@ -198,6 +213,18 @@
                             {
                                 data: 'patti',
                                 name: 'patti'
+                            },
+                            {
+                                data: 'size_chaak',
+                                name: 'size_chaak'
+                            },
+                            {
+                                data: 'front_patti',
+                                name: 'front_patti'
+                            },
+                            {
+                                data: 'front_patti_design',
+                                name: 'front_patti_design'
                             },
                             {
                                 data: 'silai',

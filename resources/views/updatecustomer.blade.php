@@ -93,6 +93,17 @@
                         </div>
 
                         <div class="form-group col-lg-4">
+                            <label for="">بازو <i class="fas fa-ruler"></i></label>
+                            <input type="text" placeholder="Enter Customer Size" name="bazu" value="{{$customer->bazu ?? ''}}" class="form-control">
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for="">گلا <i class="fas fa-ruler"></i></label>
+                            <input type="text" placeholder="Enter Customer Size" name="gala" value="{{$customer->gala ?? ''}}" class="form-control">
+                        </div>
+
+
+                        <div class="form-group col-lg-4">
                             <label for="">آستین <i class="fas fa-ruler"></i></label>
                             <input type="text" placeholder="Enter Customer Size" value="{{$customer->astin ?? ''}}" name="astin" class="form-control">
                         </div>
@@ -285,6 +296,21 @@
                         <div class="form-group col-lg-4">
                             <label for="">کونی سائز <i class="fas fa-ruler"></i></label>
                             <input type="text" value="{{$customer->konisize}}" name="konisize" class="form-control">
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for=""> سائز چاک <i class="fas fa-ruler"></i></label>
+                            <input type="text" name="size_chaak" value="{{$customer->size_chaak}}" class="form-control">
+                        </div>
+                        
+                        <div class="form-group col-lg-4">
+                            <label for=""> فرنٹ پٹی <i class="fas fa-ruler"></i></label>
+                            <input type="text" name="front_patti" value="{{$customer->front_patti}}" class="form-control">
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for=""> فرنٹ پٹی ڈیزائن <i class="fas fa-ruler"></i></label>
+                            <input type="text" name="front_patti_design" value="{{$customer->front_patti_design}}" class="form-control">
                         </div>
 
                         <div class="form-group col-lg-4">
