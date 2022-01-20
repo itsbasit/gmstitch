@@ -68,7 +68,8 @@ class InvoiceController extends Controller
         $invoice->bookingDate=$request->currentdate;
         $invoice->deliveryDate=$request->returndate;
         $invoice->advance=$request->advance;
-        $invoice->discount=$request->discount;
+        $invoice->total=$request->total;
+        $invoice->remaining=$request->remaining;
 
         $invoice->save();
         return redirect()->route('invoice.index')->with('success', 'Invoice Created Successfully');
@@ -119,7 +120,8 @@ class InvoiceController extends Controller
         $invoice->bookingDate=$request->currentdate;
         $invoice->deliveryDate=$request->returndate;
         $invoice->advance=$request->advance;
-        $invoice->discount=$request->discount;
+        $invoice->total=$request->total;
+        $invoice->remaining=$request->remaining;
 
         $invoice->update();
         return redirect()->route('invoice.index')->with('success', 'Invoice Updated Successfully');

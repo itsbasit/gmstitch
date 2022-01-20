@@ -58,8 +58,13 @@
                         </div>
 
                         <div class="form-group col-lg-6">
-                            <label for="">Discount <i class="fas fa-money-bill-wave"></i></label>
-                            <input type="number" name="discount" class="form-control" value={{$invoice->discount}}>
+                            <label for="">Total <i class="fas fa-money-bill-wave"></i></label>
+                            <input type="number" name="total" class="form-control" value={{$invoice->total}}>
+                        </div>
+
+                        <div class="form-group col-lg-6">
+                            <label for="">Remaining <i class="fas fa-money-bill-wave"></i></label>
+                            <input type="number" name="remaining" class="form-control" value={{$invoice->remaining}}>
                         </div>
 
                     </div>

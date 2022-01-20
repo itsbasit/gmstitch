@@ -20,7 +20,8 @@ class CreateInvoiceTable extends Migration
 		$table->date('bookingDate')->nullable();
 		$table->date('deliveryDate')->nullable();
 		$table->string('advance')->nullable();
-		$table->string('discount')->nullable();
+		$table->string('total')->nullable();
+		$table->string('remaining')->nullable();
         $table->timestamps();
         });
     }
