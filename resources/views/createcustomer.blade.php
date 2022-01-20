@@ -218,7 +218,14 @@
                         <div class="form-group col-lg-4">
                             <label for="">پٹی <i class="fas fa-ruler"></i></label>
                             <select name="patti" class="form-control custom-slect">
-                                <option value="سادہ پٹی1 "> 1"سادہ پٹی </option>
+                                
+                                  
+                                <option value="انگلش  پٹی1 "> 1"انگلش پٹی </option>                         
+                                <option value="انگلش پٹی1 1/4"> 1 "1/4انگلش پٹی </option>
+                                <option value="انگلش پٹی1 1/2"> 1 1/2انگلش پٹی </option>
+                                <option value="انگلش پٹی  3/4"> 3/4انگلش پٹی </option>
+
+                                <option value="سادہ پٹی1 "> 1"سادہ پٹی </option>                         
                                 <option value="سادہ پٹی1 1/4"> 1 "1/4سادہ پٹی </option>
                                 <option value="سادہ پٹی1 1/2"> 1 1/2سادہ پٹی </option>
                                 <option value="سادہ پٹی  3/4"> 3/4سادہ پٹی </option>
