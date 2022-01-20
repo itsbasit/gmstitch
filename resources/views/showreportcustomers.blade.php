@@ -146,7 +146,7 @@
                 فرنٹ پٹی :- {{$value->patti}} <br>
                 موڈا :- {{$value->moda}} <br>
                 کونی سائز :- {{$value->konisize}} <br>
-                {{$value->side_chaak}} <br>
+               {{$value->side_chaak}} <br>
                 ڈراپ کندھے :- {{$value->downshoulder}} <br>
                 ڈیزائن :- {{$value->design}} <br>
                 کڑھائی :- {{$value->karhai}} <br>

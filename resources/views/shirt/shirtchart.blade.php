@@ -121,16 +121,22 @@
                 @foreach ($data as $value)
              <h5 style="font-size: 27px;">
                   {{ $value->cuff1 }} -:کف سائز<br>
-                    {{-- {{ $value->gheri }} -:گھیرا<br> --}}
-                  آضافی :- {{ $value->patti }}  <br>
+                {{ $value->gheri }} -:گھیرا<br>
+                {{ $value->colar }} -:کالر <br>
+                {{ $value->bain }} -:بین <br>
+                {{ $value->kuff }} -:کف <br>
+                {{ $value->gheri }} -:گہیرا <br>
+                {{ $value->front_pocket }} -:فرنٹ پاکٹ <br>
+                {{ $value->design }} -:ڈیزائن <br>
+                {{ $value->side_pocket }} -: سائڈپاکٹ <br>
+                
+                    {{ $value->patti }} -:فرنٹ پٹی<br>
                     {{ $value->moda }} -:موڈا<br>
-                    {{ $value->konisize }} -: کونی سائز<br>
-                    {{-- {{ $value->downshoulder }} -:ڈراپ کندھے<br> --}}
+                    {{ $value->konisize }} -: کونی <br>
+                    {{ $value->downshoulder }} -:ڈراپ کندھے<br>
                     {{ $value->design }} -:ڈیزائن<br>
                     {{ $value->karhai }} -:کڑھائی<br>
-                                 تیار 1 :-  {{$value->tayar1}} <br>
-             تیار 2 :-  {{$value->tayar2}} <br>
-              تیار 3:- {{$value->tayar3}} <br>
+                
 </h5>
                 @endforeach
             </div>
