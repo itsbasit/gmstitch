@@ -41,7 +41,7 @@
                                 class="form-control" required value="{{$customer->mobile}}">
                         </div>
 
-                       
+                        
 
                         <div class="form-group col-lg-4">
                             <label for="">لمبائی <i class="fas fa-ruler"></i></label>
@@ -52,6 +52,17 @@
                             <label for="">تیرا <i class="fas fa-ruler"></i></label>
                             <input type="text" placeholder="Enter Customer Size" value="{{$customer->tira ?? ''}}" name="tira" class="form-control">
                         </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for="">بازو <i class="fas fa-ruler"></i></label>
+                            <input type="text" placeholder="Enter Customer Size" name="bazu" value="{{$customer->bazu ?? ''}}" class="form-control">
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for="">گلا <i class="fas fa-ruler"></i></label>
+                            <input type="text" placeholder="Enter Customer Size" name="gala" value="{{$customer->gala ?? ''}}" class="form-control">
+                        </div>
+
 
                         <div class="form-group col-lg-4">
                             <label for="">آستین <i class="fas fa-ruler"></i></label>
@@ -80,14 +91,13 @@
                             <input type="text" placeholder="Enter Customer Size" name="hip" value="{{$customer->hip ?? ''}}" class="form-control">
                         </div>
 
-
                         <div class="form-group col-lg-4">
                            <label for="">کالر <i class="fas fa-ruler"></i></label>
                         <select name="calar" class="form-control" >
                         <option value="{{$customer->calar}}" selected>{{$customer->calar ?? 'کالر'}}</option>
                         <option value=" کالر سادہ">کالر سادہ</option>
                         <option value="کالر فرنچ ">کالر فرنچ </option>
-                        <option value="کوئ نہیں">کوئ نہیں</option>
+                        <option value=" نہیں"> نہیں</option>
                            </select>
                         </div>
 
@@ -121,16 +131,21 @@
                         <option value="کوئ نہیں">کوئ نہیں</option>
                         </select>
                         </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for=""> کف<i class="fas fa-ruler"></i></label>
+                            <input type="text" placeholder="Enter Customer Size" value="{{$customer->cuff2}}" name="cuff2" class="form-control">
+                        </div>
                         
                         <div class="form-group col-lg-4">
                             <label for="">کف سائز <i class="fas fa-ruler"></i></label>
                             <!-- <input type="text" placeholder="Enter Customer Size" name="cuff1" class="form-control"> -->
                         <select name="cuffsize" class="form-control custom-slect">
                         <option value="{{$customer->cuffsize}}" selected>{{$customer->cuffsize}}</option>
-                        <option value="کف چوڑائی 2 ">کف چوڑائی 2 </option>
-                        <option value="کف چوڑائی 3 ">کف چوڑائی 3 </option>
-                        <option value="کف چوڑائی 1/2 2">کف چوڑائی 1/2 2 </option>
-                        <option value=" کف چوڑائی 1/4 2">کف چوڑائی  1/4 2 </option>
+                        <option value="2">2</option>
+                                <option value="2 1/4">2 1/4</option>
+                                <option value="2 1/2">2 1/2</option>
+                                <option value="3">3</option>
                         <option value="کوئ نہیں">کوئ نہیں</option>
                         </select>
                         </div> 
@@ -142,17 +157,19 @@
                                 <option value="گول گھیرا "> گول گھیرا </option>
                                 <option value="سیدھا گھیرا">سیدھا گھیرا </option>
                                 <option value="کوئ نہیں">کوئ نہیں</option>
+                                
                             </select>
                         </div> 
                         <div class="form-group col-lg-4">
                             <label for="">پٹی <i class="fas fa-ruler"></i></label>
                             <select name="patti" class="form-control custom-slect">
                             <option value="{{$customer->patti}}" selected>{{$customer->patti}}</option>
+                                  
                             <option value="انگلش  پٹی1 "> 1"انگلش پٹی </option>                         
                                 <option value="انگلش پٹی1 1/4"> 1 "1/4انگلش پٹی </option>
                                 <option value="انگلش پٹی1 1/2"> 1 1/2انگلش پٹی </option>
-                                <option value="انگلش پٹی  3/4"> 3/4انگلش پٹی </option> 
-                                <option value="سادہ پٹی1 "> 1"سادہ پٹی </option>
+                                <option value="انگلش پٹی  3/4"> 3/4انگلش پٹی </option>    
+                            <option value="سادہ پٹی1 "> 1"سادہ پٹی </option>
                                 <option value="سادہ پٹی1 1/4"> 1 "1/4سادہ پٹی </option>
                                 <option value="سادہ پٹی1 1/2"> 1 1/2سادہ پٹی </option>
                                 <option value="سادہ پٹی  3/4"> 3/4سادہ پٹی </option>
@@ -161,6 +178,7 @@
                                 <option value="گم پٹی1 1/2">1 1/2 گم پٹی </option>
                                 <option value="گم پٹی 3/4"> 3/4گم پٹی </option>
                                 <option value="کوئ نہیں">کوئ نہیں</option>
+                                
                             </select>
                         </div>  
 
@@ -174,6 +192,7 @@
                                 <option value="مکمل تین سلائی  ">مکمل تین سلائی </option>
                                 <option value="مکمل ڈبل سلائی">مکمل ڈبل سلائی </option>
                                 <option value="کوئ نہیں">کوئ نہیں</option>
+                                
                             </select>
                         </div>
                         <div class="form-group col-lg-4">
@@ -183,6 +202,7 @@
                                 <option value="1"> 1 </option>
                                 <option value="2"> 2 </option>
                                 <option value="کوئ نہیں">کوئ نہیں</option>
+                                
                             </select>
                         </div>
                         <div class="form-group col-lg-4">
@@ -194,6 +214,11 @@
                                 <option value="کوئ نہیں">کوئ نہیں</option>
                             </select>
                         </div>  
+
+                        <div class="form-group col-lg-4">
+                            <label for=""> فرنٹ پاکٹ ڈیزائن <i class="fas fa-ruler"></i></label>
+                            <input type="text" value="{{$customer->front_pocket_design}}" name="front_pocket_design" class="form-control">
+                        </div> 
 
                         
 
@@ -208,10 +233,25 @@
                         </div>
 
                         <div class="form-group col-lg-4">
+                            <label for=""> سائڈ چاک <i class="fas fa-ruler"></i></label>
+                            <input type="text" name="side_chaak" value="{{$customer->side_chaak}}" class="form-control">
+                        </div>
+                        
+                        <div class="form-group col-lg-4">
+                            <label for=""> فرنٹ پٹی <i class="fas fa-ruler"></i></label>
+                            <input type="text" name="front_patti" value="{{$customer->front_patti}}" class="form-control">
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for=""> فرنٹ پٹی ڈیزائن <i class="fas fa-ruler"></i></label>
+                            <input type="text" name="front_patti_design" value="{{$customer->front_patti_design}}" class="form-control">
+                        </div>
+
+                        <div class="form-group col-lg-4">
                             <label for="">ڈراپ کندھے <i class="fas fa-ruler"></i></label>
                             <select name="downshoulder" class="form-control custom-select" id="">
                                 <option value="{{$customer->downshoulder}}" selected >{{$customer->downshoulder}}</option>
-                                
+                                <!-- <option value="" disabled  hidden> ڈراپ کندھے</option> -->
                                 <option value="ہاں">ہاں</option>
                                 <option value="نہیں">نہیں</option>
                             </select>
@@ -240,8 +280,7 @@
                             <label for="">Tayar3 <i class="fas fa-ruler"></i></label>
                             <input type="text" value="{{$customer->tayar3}}" placeholder="Enter Customer Size" name="tayar3" class="form-control">
                         </div>
-                       
-
+                     
                         <div class="form-group col-lg-4">
                             <label for="">Cutter <i class="fas fa-users"></i></label>
                             <input type="text" value="{{$customer->cutter}}" placeholder="Enter cutter Name" name="cutter" class="form-control"
@@ -259,7 +298,6 @@
                             <input type="text" value="{{$customer->enteredby}}" name="enteredby" class="form-control" required>
                         </div>
 
-                      
                         <div class="form-group col-lg-4">
                             <label for="">Total Amount <i class="fas fa-money-bill-wave"></i></label>
                             <input type="text" placeholder="Enter Employee Total Amount" name="total_price"

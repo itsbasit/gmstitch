@@ -127,7 +127,7 @@
     @endforeach --}}
 
 
-    <div class="container" style="height: 550px;">
+    <div class="container" style="height: 650px;">
         <div class="row">
             <div class="col-sm-4">
                 <img src="{{ asset('/smtailors.png') }}" alt="registerlogo" width="330" height="450"
@@ -139,14 +139,17 @@
                 کالر :-  {{ $value->calar }} <br>
                  بین :- {{ $value->bain }}  <br>
                 کف :-  {{ $value->cuff }} <br>
+                کف :-  {{ $value->cuff2 }} <br>
+                کف سائز :-  {{ $value->cuffsize }} <br>
                 گھیرا :- {{ $value->gheri }} <br>
                 فرنٹ پاکٹ :- {{$value->front_pocket}} <br>
+                فرنٹ پاکٹ ڈیزائن :- {{$value->front_pocket_design}} <br>
                 <!-- {{$value->front_pocket}} <br> -->
                 سائیڈ پاکٹ :- {{$value->side_pocket}} <br>
                 فرنٹ پٹی :- {{$value->patti}} <br>
                 موڈا :- {{$value->moda}} <br>
                 کونی سائز :- {{$value->konisize}} <br>
-               {{$value->side_chaak}} <br>
+                سائڈ چاک :- {{$value->side_chaak}} <br>
                 ڈراپ کندھے :- {{$value->downshoulder}} <br>
                 ڈیزائن :- {{$value->design}} <br>
                 کڑھائی :- {{$value->karhai}} <br>
@@ -173,6 +176,7 @@
                             {{ $value->poncha }} -:شلوار پانچہ <br>
                              {{$value->shalwarpocket}} -: شلوار پاکٹ
                             {{ $value->shalwarghera }} -:شلوار گہیرا<br>
+                            {{ $value->poncha2 }} -:پانچہ <br>
                             
 
                         </h5>

@@ -82,6 +82,7 @@ class CustomerController extends Controller
         $customer->silai=$request->silai;
         $customer->side_pocket=$request->side_pocket;
         $customer->front_pocket=$request->front_pocket;
+        $customer->front_pocket_design=$request->front_pocket_design;
         $customer->kamar=$request->kamar;
         $customer->hip=$request->hip;
         $customer->cuffsize=$request->cuffsize;
@@ -91,10 +92,10 @@ class CustomerController extends Controller
         $customer->shalwarpocket=$request->shalwarpocket;
         $customer->shalwarghera=$request->shalwarghera;
         $customer->poncha=$request->poncha;
-        $customer->size_chaak=$request->size_chaak;
+        $customer->side_chaak=$request->side_chaak;
         $customer->front_patti=$request->front_patti;
         $customer->front_patti_design=$request->front_patti_design;
-        // $customer->poncha2=$request->poncha2;
+        $customer->poncha2=$request->poncha2;
         // $customer->currentdate=$request->currentdate;
         // $customer->returndate=$request->returndate;
         $customer->stitcher=$request->stitcher;
@@ -173,7 +174,7 @@ class CustomerController extends Controller
         $customer->tira=$request->tira;
         $customer->bazu=$request->bazu;
         $customer->gala=$request->gala;
-        $customer->size_chaak=$request->size_chaak;
+        $customer->side_chaak=$request->side_chaak;
         $customer->front_patti=$request->front_patti;
         $customer->front_patti_design=$request->front_patti_design;
         $customer->bain=$request->bain;
@@ -189,6 +190,7 @@ class CustomerController extends Controller
         $customer->silai=$request->silai;
         $customer->side_pocket=$request->side_pocket;
         $customer->front_pocket=$request->front_pocket;
+        $customer->front_pocket_design=$request->front_pocket_design;
         $customer->kamar=$request->kamar;
         $customer->hip=$request->hip;
         $customer->cuffsize=$request->cuffsize;
@@ -198,7 +200,7 @@ class CustomerController extends Controller
         $customer->shalwarpocket=$request->shalwarpocket;
         $customer->shalwarghera=$request->shalwarghera;
         $customer->poncha=$request->poncha;
-        // $customer->poncha2=$request->poncha2;
+        $customer->poncha2=$request->poncha2;
         // $customer->currentdate=$request->currentdate;
         // $customer->returndate=$request->returndate;
         $customer->stitcher=$request->stitcher;

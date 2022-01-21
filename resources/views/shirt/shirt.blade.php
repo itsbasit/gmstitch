@@ -65,6 +65,12 @@
                                 <th>ڈراپ کندھے <i class="fas fa-envelope"></i></th>
                                 <th>ڈیزائن <i class="fas fa-tshirt"></i></th>
                                 <th>کڑھائی <i class="fas fa-tshirt"></i></th>
+                                <th>گلا  <i class="fas fa-tshirt"></i></th>
+                                <th>بازو  <i class="fas fa-tshirt"></i></th>
+                                <th>کف <i class="fas fa-tshirt"></i></th>
+                                <th> فرنٹ پاکٹ ڈیزائن  <i class="fas fa-tshirt"></i></th>
+                                <th> سائڈ چاک  <i class="fas fa-tshirt"></i></th>
+                                <th> فرنٹ پٹی ڈیزائن  <i class="fas fa-tshirt"></i></th>
                                 <th>Tayar1 <i class="fas fa-tshirt"></i></th>
                                 <th>Tayar2 <i class="fas fa-tshirt"></i></th>
                                 <th>tayar3 <i class="fas fa-tshirt"></i></th>
@@ -200,6 +206,36 @@
                             {
                                 data: 'karhai',
                                 name: 'karhai'
+                            },
+
+                            {
+                                data: 'gala',
+                                name: 'gala'
+                            },
+
+                            {
+                                data: 'bazu',
+                                name: 'bazu'
+                            },
+
+                            {
+                                data: 'cuff2',
+                                name: 'cuff2'
+                            },
+
+                            {
+                                data: 'front_pocket_design',
+                                name: 'front_pocket_design'
+                            },
+
+                            {
+                                data: 'side_chaak',
+                                name: 'side_chaak'
+                            },
+
+                            {
+                                data: 'front_patti_design',
+                                name: 'front_patti_design'
                             },
 
                             {

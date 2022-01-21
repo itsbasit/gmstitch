@@ -168,6 +168,11 @@
                         </div>
 
                         <div class="form-group col-lg-4">
+                            <label for=""> پانچہ <i class="fas fa-ruler"></i></label>
+                            <input type="text" value="{{$customer->poncha2}}" placeholder="Enter Customer Size" name="poncha2" class="form-control">
+                        </div>
+
+                        <div class="form-group col-lg-4">
                            <label for="">کالر <i class="fas fa-ruler"></i></label>
                         <select name="calar" class="form-control" >
                         <option value="{{$customer->calar}}" selected>{{$customer->calar ?? 'کالر'}}</option>
@@ -291,6 +296,11 @@
                             </select>
                         </div>  
 
+                        <div class="form-group col-lg-4">
+                            <label for=""> فرنٹ پاکٹ ڈیزائن <i class="fas fa-ruler"></i></label>
+                            <input type="text" name="front_pocket_design" class="form-control">
+                        </div> 
+
                         
 
                         <div class="form-group col-lg-4">
@@ -304,8 +314,8 @@
                         </div>
 
                         <div class="form-group col-lg-4">
-                            <label for=""> سائز چاک <i class="fas fa-ruler"></i></label>
-                            <input type="text" name="size_chaak" value="{{$customer->size_chaak}}" class="form-control">
+                            <label for=""> سائڈ چاک <i class="fas fa-ruler"></i></label>
+                            <input type="text" name="side_chaak" value="{{$customer->side_chaak}}" class="form-control">
                         </div>
                         
                         <div class="form-group col-lg-4">

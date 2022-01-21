@@ -52,16 +52,23 @@ class ShirtController extends Controller
      */
     public function store(Request $request)
     {
+
+        // dd($request->all());
         $shirt= new ShirtModel;
         $shirt->customerID=$request->customerID;
         $shirt->name=$request->name;
         $shirt->mobile=$request->mobile;
-        
+        $shirt->side_chaak=$request->side_chaak;
+        $shirt->front_patti_design=$request->front_patti_design;
         $shirt->lambai=$request->lambai;
         $shirt->calar=$request->calar;
         $shirt->tira=$request->tira;
         $shirt->bain=$request->bain;
+        $shirt->gala=$request->gala;
+        $shirt->cuff2=$request->cuff2;
+        $shirt->front_patti=$request->front_patti;
         $shirt->astin=$request->astin;
+        $shirt->bazu=$request->bazu;
         $shirt->cuff=$request->cuff;
         $shirt->colar=$request->calarsize;
         $shirt->patti=$request->patti;
@@ -72,6 +79,7 @@ class ShirtController extends Controller
         $shirt->silai=$request->silai;
         $shirt->side_pocket=$request->side_pocket;
         $shirt->front_pocket=$request->front_pocket;
+        $shirt->front_pocket_design=$request->front_pocket_design;
         $shirt->kamar=$request->kamar;
         $shirt->hip=$request->hip;
         $shirt->cuffsize=$request->cuffsize;
@@ -132,12 +140,17 @@ class ShirtController extends Controller
         $shirt->customerID=$request->customerID;
         $shirt->name=$request->name;
         $shirt->mobile=$request->mobile;
-        
+        $shirt->side_chaak=$request->side_chaak;
+        $shirt->front_patti_design=$request->front_patti_design;
         $shirt->lambai=$request->lambai;
         $shirt->calar=$request->calar;
         $shirt->tira=$request->tira;
         $shirt->bain=$request->bain;
+        $shirt->gala=$request->gala;
+        $shirt->cuff2=$request->cuff2;
+        $shirt->front_patti=$request->front_patti;
         $shirt->astin=$request->astin;
+        $shirt->bazu=$request->bazu;
         $shirt->cuff=$request->cuff;
         $shirt->colar=$request->calarsize;
         $shirt->patti=$request->patti;
@@ -148,6 +161,7 @@ class ShirtController extends Controller
         $shirt->silai=$request->silai;
         $shirt->side_pocket=$request->side_pocket;
         $shirt->front_pocket=$request->front_pocket;
+        $shirt->front_pocket_design=$request->front_pocket_design;
         $shirt->kamar=$request->kamar;
         $shirt->hip=$request->hip;
         $shirt->cuffsize=$request->cuffsize;

@@ -134,10 +134,7 @@
                                 class="form-control">
                         </div>
 
-                        <!-- <div class="form-group col-lg-4">
-                            <label for=""> شلوار پانچہ <i class="fas fa-ruler"></i></label>
-                            <input type="text" placeholder="Enter Customer Size" name="poncha" class="form-control">
-                        </div> -->
+                        
 
                         <div class="form-group col-lg-4">
                         <label for="">شلوار پاکٹ <i class="fas fa-ruler"></i></label>
@@ -164,6 +161,12 @@
                                 <option value=" سلائی کانٹا10  ">10 سلائی کانٹا </option>
                                 <option value="کوئ نہیں">کوئ نہیں</option>
                             </select>
+                        </div>
+
+
+                        <div class="form-group col-lg-4">
+                            <label for=""> پانچہ <i class="fas fa-ruler"></i></label>
+                            <input type="text" placeholder="Enter Customer Size" name="poncha2" class="form-control">
                         </div>
 
                         <!-- <div class="form-group col-lg-4">
@@ -293,11 +296,13 @@
                                 <option value="1"> 1 </option>
                                 <option value="2"> 2 </option>
                                 <option value="کوئ نہیں">کوئ نہیں</option>
-                                
                             </select>
                         </div>  
 
-                        
+                        <div class="form-group col-lg-4">
+                            <label for=""> فرنٹ پاکٹ ڈیزائن <i class="fas fa-ruler"></i></label>
+                            <input type="text" name="front_pocket_design" class="form-control">
+                        </div>  
 
                         <div class="form-group col-lg-4">
                             <label for="">موڈا <i class="fas fa-ruler"></i></label>
@@ -310,8 +315,8 @@
                         </div>
 
                         <div class="form-group col-lg-4">
-                            <label for=""> سائز چاک <i class="fas fa-ruler"></i></label>
-                            <input type="text" name="size_chaak" class="form-control">
+                            <label for=""> سائڈ چاک <i class="fas fa-ruler"></i></label>
+                            <input type="text" name="side_chaak" class="form-control">
                         </div>
                         
                         <div class="form-group col-lg-4">

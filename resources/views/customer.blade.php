@@ -57,6 +57,7 @@
                                 <th>شلوار پاکٹ <i class="fas fa-tshirt"></i></th>
                                 <th>شلوار گہیرا <i class="fas fa-tshirt"></i></th>
                                 <th>شلوار پانچہ <i class="fas fa-tshirt"></i></th>
+                                <th> پانچہ <i class="fas fa-tshirt"></i></th>
                                 <th>کالر <i class="fas fa-tshirt"></i></th>
                                 <th>کالرسائز <i class="fas fa-tshirt"></i></th>
                                 <!-- <th>شلوار پانچہ <i class="fas fa-tshirt"></i></th> -->
@@ -65,9 +66,10 @@
                                 
                                 <th>کف <i class="fas fa-tshirt"></i></th> 
                                 <th>کف سائز <i class="fas fa-tshirt"></i></th> 
+                                <th>کف  <i class="fas fa-tshirt"></i></th> 
                                 <th>گھیرا <i class="fas fa-tshirt"></i></th>
                                 <th>Patti <i class="fas fa-tshirt"></i></th>
-                                <th>سائزچاک <i class="fas fa-tshirt"></i></th>
+                                <th>سائڈ چاک <i class="fas fa-tshirt"></i></th>
                                 <th> فرنٹ پٹی<i class="fas fa-tshirt"></i></th>
                                 <th>فرنٹ پٹی ڈیزائن <i class="fas fa-tshirt"></i></th>
                                 <th>سلائی <i class="fas fa-tshirt"></i></th>
@@ -184,6 +186,10 @@
                                 name: 'poncha'
                             },
                             {
+                                data: 'poncha2',
+                                name: 'poncha2'
+                            },
+                            {
                                 data: 'calar',
                                 name: 'calar'
                             },
@@ -206,6 +212,11 @@
                             },
 
                             {
+                                data: 'cuff2',
+                                name: 'cuff2'
+                            },
+
+                            {
                                 data: 'gheri',
                                 name: 'gheri'
                             },
@@ -215,8 +226,8 @@
                                 name: 'patti'
                             },
                             {
-                                data: 'size_chaak',
-                                name: 'size_chaak'
+                                data: 'side_chaak',
+                                name: 'side_chaak'
                             },
                             {
                                 data: 'front_patti',

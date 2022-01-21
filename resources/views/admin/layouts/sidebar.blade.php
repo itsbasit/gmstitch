@@ -82,7 +82,7 @@
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-users"></i>
                     <p>
-                        Customer
+                        Shalwar Kamees
                         <i class="fas fa-angle-left right"></i>
                         {{-- <span class="badge badge-info right">6</span> --}}
                     </p>
@@ -99,18 +99,23 @@
                         </a>
                     </li>
 
-                    <li class="nav-item menu-open bg-warning">
-                        <a href="{{ route('invoice.index') }}" class="nav-link">
-                            <i class="nav-icon fas fa-address-card"></i>
-
-                            <p>
-                                Invoice
-                            </p>
-                        </a>
-                    </li>
                    
 
                 </ul>
+            </li>
+
+
+            <li class="nav-item bg-danger text-warning">
+                <a href="{{ route('invoice.index') }}" class="nav-link">
+                    <i class="nav-icon fas fa-file"></i>
+                    <p>
+                    Invoice
+                        <i class="fas fa-angle-right     right"></i>
+                        {{-- <span class="badge badge-info right">6</span> --}}
+                    </p>
+                </a>
+            
+
             </li>
 
 

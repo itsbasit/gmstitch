@@ -37,8 +37,7 @@
                                 class="form-control" required>
                         </div>
 
-                       
-
+                      
                         <div class="form-group col-lg-4">
                             <label for="">لمبائی <i class="fas fa-ruler"></i></label>
                             <input type="text" name="lambai" class="form-control">
@@ -47,6 +46,16 @@
                         <div class="form-group col-lg-4">
                             <label for="">تیرا <i class="fas fa-ruler"></i></label>
                             <input type="text" placeholder="Enter Customer Size" name="tira" class="form-control">
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for="">بازو <i class="fas fa-ruler"></i></label>
+                            <input type="text" placeholder="Enter Customer Size" name="bazu" class="form-control">
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for="">گلا <i class="fas fa-ruler"></i></label>
+                            <input type="text" placeholder="Enter Customer Size" name="gala" class="form-control">
                         </div>
 
                         <div class="form-group col-lg-4">
@@ -76,9 +85,6 @@
                             <input type="text" placeholder="Enter Customer Size" name="hip" class="form-control">
                         </div>
 
-                       
-
-                     
 
                         <div class="form-group col-lg-4">
                            <label for="">کالر <i class="fas fa-ruler"></i></label>
@@ -120,15 +126,20 @@
                         
                         <div class="form-group col-lg-4">
                             <label for="">کف سائز <i class="fas fa-ruler"></i></label>
-                           
+                            <!-- <input type="text" placeholder="Enter Customer Size" name="cuff1" class="form-control"> -->
                         <select name="cuffsize" class="form-control custom-slect">
-                        <option value="کف چوڑائی 2 ">کف چوڑائی 2 </option>
-                                <option value="کف چوڑائی 3 ">کف چوڑائی 3 </option>
-                                <option value="کف چوڑائی 1/2 2">کف چوڑائی 1/2 2 </option>
-                                <option value=" کف چوڑائی 1/4 2">کف چوڑائی  1/4 2 </option>
+                                <option value="2">2</option>
+                                <option value="2 1/4">2 1/4</option>
+                                <option value="2 1/2">2 1/2</option>
+                                <option value="3">3</option>
                                 <option value="کوئ نہیں">کوئ نہیں</option>
                         </select>
-                        </div> 
+                        </div>
+                        
+                        <div class="form-group col-lg-4">
+                            <label for=""> کف<i class="fas fa-ruler"></i></label>
+                            <input type="text" placeholder="Enter Customer Size" name="cuff2" class="form-control">
+                        </div>
 
                         <div class="form-group col-lg-4">
                             <label for="">گھیرا <i class="fas fa-ruler"></i></label>
@@ -136,16 +147,20 @@
                                 <option value="گول گھیرا "> گول گھیرا </option>
                                 <option value="سیدھا گھیرا">سیدھا گھیرا </option>
                                 <option value="کوئ نہیں">کوئ نہیں</option>
+                                
                             </select>
                         </div> 
                         <div class="form-group col-lg-4">
                             <label for="">پٹی <i class="fas fa-ruler"></i></label>
                             <select name="patti" class="form-control custom-slect">
-                            <option value="انگلش  پٹی1 "> 1"انگلش پٹی </option>                         
+                                
+                                  
+                                <option value="انگلش  پٹی1 "> 1"انگلش پٹی </option>                         
                                 <option value="انگلش پٹی1 1/4"> 1 "1/4انگلش پٹی </option>
                                 <option value="انگلش پٹی1 1/2"> 1 1/2انگلش پٹی </option>
-                                <option value="انگلش پٹی  3/4"> 3/4انگلش پٹی </option> 
-                                <option value="سادہ پٹی1 "> 1"سادہ پٹی </option>
+                                <option value="انگلش پٹی  3/4"> 3/4انگلش پٹی </option>
+
+                                <option value="سادہ پٹی1 "> 1"سادہ پٹی </option>                         
                                 <option value="سادہ پٹی1 1/4"> 1 "1/4سادہ پٹی </option>
                                 <option value="سادہ پٹی1 1/2"> 1 1/2سادہ پٹی </option>
                                 <option value="سادہ پٹی  3/4"> 3/4سادہ پٹی </option>
@@ -154,6 +169,7 @@
                                 <option value="گم پٹی1 1/2">1 1/2 گم پٹی </option>
                                 <option value="گم پٹی 3/4"> 3/4گم پٹی </option>
                                 <option value="کوئ نہیں">کوئ نہیں</option>
+                                
                             </select>
                         </div>  
 
@@ -166,6 +182,7 @@
                                 <option value="مکمل تین سلائی  ">مکمل تین سلائی </option>
                                 <option value="مکمل ڈبل سلائی">مکمل ڈبل سلائی </option>
                                 <option value="کوئ نہیں">کوئ نہیں</option>
+                                
                             </select>
                         </div>
                         <div class="form-group col-lg-4">
@@ -174,6 +191,7 @@
                                 <option value="1"> 1 </option>
                                 <option value="2"> 2 </option>
                                 <option value="کوئ نہیں">کوئ نہیں</option>
+                                
                             </select>
                         </div>
                         <div class="form-group col-lg-4">
@@ -185,7 +203,10 @@
                             </select>
                         </div>  
 
-                        
+                        <div class="form-group col-lg-4">
+                            <label for=""> فرنٹ پاکٹ ڈیزائن <i class="fas fa-ruler"></i></label>
+                            <input type="text" name="front_pocket_design" class="form-control">
+                        </div>  
 
                         <div class="form-group col-lg-4">
                             <label for="">موڈا <i class="fas fa-ruler"></i></label>
@@ -195,6 +216,21 @@
                         <div class="form-group col-lg-4">
                             <label for="">کونی سائز <i class="fas fa-ruler"></i></label>
                             <input type="text" name="konisize" class="form-control">
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for=""> سائڈ چاک <i class="fas fa-ruler"></i></label>
+                            <input type="text" name="side_chaak" class="form-control">
+                        </div>
+                        
+                        <div class="form-group col-lg-4">
+                            <label for=""> فرنٹ پٹی <i class="fas fa-ruler"></i></label>
+                            <input type="text" name="front_patti" class="form-control">
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for=""> فرنٹ پٹی ڈیزائن <i class="fas fa-ruler"></i></label>
+                            <input type="text" name="front_patti_design" class="form-control">
                         </div>
 
                         <div class="form-group col-lg-4">
@@ -229,7 +265,10 @@
                             <label for="">Tayar3 <i class="fas fa-ruler"></i></label>
                             <input type="text" placeholder="Enter Customer Size" name="tayar3" class="form-control">
                         </div>
-                        
+                        <!-- <div class="form-group col-lg-4">
+                            <label for="">Tayar4 <i class="fas fa-ruler"></i></label>
+                            <input type="text" placeholder="Enter Customer Size" name="tayar4" class="form-control">
+                        </div> -->
 
                         <div class="form-group col-lg-4">
                             <label for="">Cutter <i class="fas fa-users"></i></label>
@@ -248,7 +287,32 @@
                             <input type="text" name="enteredby" class="form-control" required>
                         </div>
 
-                   
+                        <!-- <div class="form-group col-lg-4">
+                            <label for="">Booking Date <i class="fas fa-calendar-plus"></i></label>
+                            <input type="date" placeholder="Enter stitcher Name" name="currentdate" class="form-control"
+                                min="1997-31-18" max="2030-31-12">
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for="">Delivery Date <i class="fas fa-calendar-check"></i></label>
+                            <input type="date" placeholder="Enter stitcher Name" name="returndate" class="form-control">
+                        </div> -->
+
+                        <!-- <div class="form-group col-lg-4">
+                            <label for="">Rack <i class="fas fa-calendar-check"></i></label>
+                            <input type="number" placeholder="Enter stitcher Name" name="rack" class="form-control"
+                                required>
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for="">ADVANCE <i class="fas fa-money-bill-wave"></i></label>
+                            <input type="number" name="advance" class="form-control">
+                        </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for="">Discount <i class="fas fa-money-bill-wave"></i></label>
+                            <input type="number" name="discount" class="form-control">
+                        </div> -->
 
                         <div class="form-group col-lg-4">
                             <label for="">Total Amount <i class="fas fa-money-bill-wave"></i></label>

@@ -47,6 +47,7 @@
                                 <th>Booking Date </th>
                                 <th>Delivery Date</th>
                                 <th>Advance </th>
+                                <th>Discount </th>
                                 <th>Total</th>
                                 <th>Remaining</th>
                                 <th>Action</th>
@@ -79,6 +80,7 @@
             {data: 'bookingDate', name: 'bookingDate'},
             {data: 'deliveryDate', name: 'deliveryDate'},   
             {data: 'advance', name: 'advance'},
+            {data: 'discount', name: 'discount'},
             {data: 'total', name: 'total'},
             {data: 'remaining', name: 'remaining'},
             {data: 'action', name: 'action', orderable: false, searchable: false},

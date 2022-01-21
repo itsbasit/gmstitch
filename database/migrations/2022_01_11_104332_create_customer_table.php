@@ -43,6 +43,7 @@ class CreateCustomerTable extends Migration
             $table->string('silai')->nullable()->default('NULL');
             $table->string('side_pocket')->nullable()->default('NULL');
             $table->string('front_pocket',200);
+            $table->string('front_pocket_design')->nullable()->default('NULL');
             $table->string('kamar')->nullable()->default('NULL');
             $table->string('hip')->nullable()->default('NULL');
             $table->string('cuffsize')->nullable()->default('NULL');
@@ -53,7 +54,7 @@ class CreateCustomerTable extends Migration
             $table->string('shalwarpocket')->nullable()->default('NULL');
             $table->string('shalwarghera')->nullable()->default('NULL');
             $table->string('downshoulder',20)->nullable()->default('NULL');
-            $table->string('size_chaak')->nullable()->default('NULL');
+            $table->string('side_chaak')->nullable()->default('NULL');
             $table->string('front_patti')->nullable()->default('NULL');
             $table->string('front_patti_design')->nullable()->default('NULL');
             $table->string('konisize')->nullable()->default('NULL');
