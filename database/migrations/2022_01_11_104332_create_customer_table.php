@@ -33,6 +33,7 @@ class CreateCustomerTable extends Migration
             $table->string('bain')->nullable()->default('NULL');
             $table->string('astin')->nullable()->default('NULL');
             $table->string('cuff')->nullable()->default('NULL');
+            $table->string('cuff2')->nullable()->default('NULL');
             $table->string('colar')->nullable()->default('NULL');
             $table->string('patti')->nullable()->default('NULL');
             $table->string('chatti')->nullable()->default('NULL');

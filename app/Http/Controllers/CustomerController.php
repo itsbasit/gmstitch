@@ -72,6 +72,7 @@ class CustomerController extends Controller
         $customer->bain=$request->bain;
         $customer->astin=$request->astin;
         $customer->cuff=$request->cuff;
+        $customer->cuff2=$request->cuff2;
         $customer->colar=$request->calarsize;
         $customer->patti=$request->patti;
         $customer->chatti=$request->chatti;
@@ -178,6 +179,7 @@ class CustomerController extends Controller
         $customer->bain=$request->bain;
         $customer->astin=$request->astin;
         $customer->cuff=$request->cuff;
+        $customer->cuff2=$request->cuff2;
         $customer->colar=$request->calarsize;
         $customer->patti=$request->patti;
         $customer->chatti=$request->chatti;

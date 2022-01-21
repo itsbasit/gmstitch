@@ -21,6 +21,7 @@ class CreateInvoiceTable extends Migration
 		$table->date('deliveryDate')->nullable();
 		$table->string('advance')->nullable();
 		$table->string('total')->nullable();
+		$table->string('discount')->nullable();
 		$table->string('remaining')->nullable();
         $table->timestamps();
         });

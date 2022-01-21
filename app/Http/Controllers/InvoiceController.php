@@ -68,6 +68,7 @@ class InvoiceController extends Controller
         $invoice->bookingDate=$request->currentdate;
         $invoice->deliveryDate=$request->returndate;
         $invoice->advance=$request->advance;
+        $invoice->discount=$request->discount;
         $invoice->total=$request->total;
         $invoice->remaining=$request->remaining;
 
@@ -121,6 +122,7 @@ class InvoiceController extends Controller
         $invoice->deliveryDate=$request->returndate;
         $invoice->advance=$request->advance;
         $invoice->total=$request->total;
+        $invoice->discount=$request->discount;
         $invoice->remaining=$request->remaining;
 
         $invoice->update();

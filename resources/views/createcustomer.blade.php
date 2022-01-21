@@ -166,6 +166,19 @@
                             </select>
                         </div>
 
+                        <!-- <div class="form-group col-lg-4">
+                            <label for=""> شلوار پاکٹ <i class="fas fa-ruler"></i></label>
+                            <select name="shalwar_pocket" class="form-control custom-select" id="">
+                                <option value="" disabled selected hidden> شلوار پانچہ</option>
+                                <option value=" سادہ پاہنچہ  "> سادہ پاہنچہ    </option>
+                                <option value="سلائیوں والا پاہنچہ ">سلائیوں والا پاہنچہ  </option>
+                                <option value="ترکاشی پاہنچہ ">تارکشی ہغنچہ  </option>
+                                <option value=" سلائی کانٹا10  ">10 سلائی کانٹا </option>
+                                <option value="کوئ نہیں">کوئ نہیں</option>
+                            </select>
+                        </div> -->
+
+
                         <div class="form-group col-lg-4">
                            <label for="">کالر <i class="fas fa-ruler"></i></label>
                            <select name="calar" class="form-control" >
@@ -214,7 +227,12 @@
                                 <option value="3">3</option>
                                 <option value="کوئ نہیں">کوئ نہیں</option>
                         </select>
-                        </div> 
+                        </div>
+                        
+                        <div class="form-group col-lg-4">
+                            <label for=""> کف<i class="fas fa-ruler"></i></label>
+                            <input type="text" placeholder="Enter Customer Size" name="cuff2" class="form-control">
+                        </div>
 
                         <div class="form-group col-lg-4">
                             <label for="">گھیرا <i class="fas fa-ruler"></i></label>

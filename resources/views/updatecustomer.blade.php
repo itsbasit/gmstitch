@@ -207,6 +207,11 @@
                         <option value="کوئ نہیں">کوئ نہیں</option>
                         </select>
                         </div>
+
+                        <div class="form-group col-lg-4">
+                            <label for=""> کف<i class="fas fa-ruler"></i></label>
+                            <input type="text" placeholder="Enter Customer Size" value="{{$customer->cuff2}}" name="cuff2" class="form-control">
+                        </div>
                         
                         <div class="form-group col-lg-4">
                             <label for="">کف سائز <i class="fas fa-ruler"></i></label>
