@@ -36,18 +36,18 @@ class fetchCustomer extends Controller
         $type = $request->type;
         if($type == 'customer')
         {
-        $data = Customer::first(['customerID']);
+        $data = Customer::all();
         } elseif ($type == 'shirt') {
-        $data = ShirtModel::first(['customerID']);
+        $data = ShirtModel::all();
         } elseif ($type == 'waistcoat') {
-        $data = WaistCoatModel::first(['customerID']);
+        $data = WaistCoatModel::all();
         } else {
-        $data = CoatModel::first(['customerID']);
+        $data = CoatModel::all();
         }
 
         if($data)
         {
-            echo $data->customerID;
+            echo $data;
         } else {
             echo 'empty';
         }

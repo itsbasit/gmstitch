@@ -127,7 +127,7 @@
     @endforeach --}}
 
 
-    <div class="container" style="height: 650px;">
+    <div class="container" >
         <div class="row">
             <div class="col-sm-4">
                 <img src="{{ asset('/smtailors.png') }}" alt="registerlogo" width="330" height="450"
@@ -153,6 +153,9 @@
                 ڈراپ کندھے :- {{$value->downshoulder}} <br>
                 ڈیزائن :- {{$value->design}} <br>
                 کڑھائی :- {{$value->karhai}} <br>
+                Tayar1 :- {{$value->tayar1}} <br>
+                Tayar2 :- {{$value->tayar2}} <br>
+                Tayar3 :- {{$value->tayar3}} <br>
         
             
 </h5>
@@ -174,7 +177,7 @@
                             <hr style="height:1px;border:none;color:#333;background-color:#333;">
                             {{ $value->shalwarlength }}-: شلوارلمبائی<br>
                             {{ $value->poncha }} -:شلوار پانچہ <br>
-                             {{$value->shalwarpocket}} -: شلوار پاکٹ
+                             {{$value->shalwarpocket}} -: شلوار پاکٹ<br>
                             {{ $value->shalwarghera }} -:شلوار گہیرا<br>
                             {{ $value->poncha2 }} -:پانچہ <br>
                             

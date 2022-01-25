@@ -29,7 +29,7 @@
         <img src="{{ asset('/brandlogo.png') }}" alt="registerlogo" width="200" height="200">
         </div>
     
-    <div class="container" style="height: 650px;">
+    <div class="container">
         <div class="row">
             <div class="col-sm-4">
                 <img src="{{ asset('/smtailors.png') }}" alt="registerlogo" width="330" height="450"
@@ -47,7 +47,7 @@
                 فرنٹ پاکٹ :- {{$value->front_pocket}} <br>
                 فرنٹ پاکٹ ڈیزائن :- {{$value->front_pocket_design}} <br>
                 <!-- {{$value->front_pocket}} <br> -->
-                سائیڈ پاکٹ :- {{$value->side_pocket}} <br>
+                
                 فرنٹ پٹی :- {{$value->patti}} <br>
                 موڈا :- {{$value->moda}} <br>
                 کونی سائز :- {{$value->konisize}} <br>
@@ -55,6 +55,9 @@
                 ڈراپ کندھے :- {{$value->downshoulder}} <br>
                 ڈیزائن :- {{$value->design}} <br>
                 کڑھائی :- {{$value->karhai}} <br>
+                Tayar1 :- {{$value->tayar1}} <br>
+                Tayar2 :- {{$value->tayar2}} <br>
+                Tayar3 :- {{$value->tayar3}} <br>
         
             
 </h5>

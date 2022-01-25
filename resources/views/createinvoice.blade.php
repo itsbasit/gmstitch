@@ -144,13 +144,19 @@
                     $('#customerID').html('<option>--Select Customer ID--</option>');
                     alert('Not customer found for this category');
                 } else {
-                $('#customerID').html('<option>--Select Customer ID--</option>');
-                $('#customerID').append($('<option>', { 
-                value: response,
-                text : response 
-                }));
+                var data = JSON.parse(response);
+                // $('#customerID').html('<option>--Select Customer ID--</option>');
+                let html = "<option value=''>Select Customer ID</option>";
+                data.forEach(element => {
+                    html += '<option value="' + element.customerID + '">' + element.customerID + '</option>';
+                });
+
+                $('#customerID').html(html);
+                
                 }
-               
+
+                
+                
             },
             // error: function (data) {
             //     console.log(data);
