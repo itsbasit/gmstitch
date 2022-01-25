@@ -176,8 +176,8 @@
                             {{ $value->hip }} -:ہپ<br>
                             <hr style="height:1px;border:none;color:#333;background-color:#333;">
                             {{ $value->shalwarlength }}-: شلوارلمبائی<br>
-                            {{ $value->poncha }} -:شلوار پانچہ <br>
-                             {{$value->shalwarpocket}} -: شلوار پاکٹ<br>
+                            شلوار پانچہ -: {{ $value->poncha }} <br>
+                            شلوار پاکٹ -: {{$value->shalwarpocket}} <br>
                             {{ $value->shalwarghera }} -:شلوار گہیرا<br>
                             {{ $value->poncha2 }} -:پانچہ <br>
                             
