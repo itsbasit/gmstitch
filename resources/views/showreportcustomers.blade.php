@@ -48,6 +48,7 @@
                     <th>Type</th>
                     <th>لمبائی <i class="fas fa-tshirt"></i></th>
                     <th>کالر <i class="fas fa-tshirt"></i></th>
+                    <th>کالر <i class="fas fa-tshirt"></i></th>
                     <th>تیرا<i class="fas fa-tshirt"></i></th>
                     <th>بین <i class="fas fa-tshirt"></i></th>
                     <th>آستین <i class="fas fa-tshirt"></i></th>
@@ -137,6 +138,7 @@
                 @foreach ($data as $value)
              <h5 style="font-size: 27px;">
                 کالر :-  {{ $value->calar }} <br>
+                کالرسائز :-  {{ $value->colar }} <br>
                  بین :- {{ $value->bain }}  <br>
                 کف :-  {{ $value->cuff }} <br>
                 کف :-  {{ $value->cuff2 }} <br>
@@ -146,7 +148,9 @@
                 فرنٹ پاکٹ ڈیزائن :- {{$value->front_pocket_design}} <br>
                 <!-- {{$value->front_pocket}} <br> -->
                 سائیڈ پاکٹ :- {{$value->side_pocket}} <br>
-                فرنٹ پٹی :- {{$value->patti}} <br>
+                 پٹی :- {{$value->patti}} <br>
+                فرنٹ پٹی :- {{$value->front_patti}} <br>
+                سلائی  :- {{$value->silai}} <br>
                 موڈا :- {{$value->moda}} <br>
                 کونی سائز :- {{$value->konisize}} <br>
                 سائڈ چاک :- {{$value->side_chaak}} <br>

@@ -1,5 +1,5 @@
 @extends('admin.layouts.master')
-@section('title', 'WaistCoat Print Record')
+@section('title', 'Coat Print Record')
 
 @section('css')
 <style>
@@ -32,6 +32,8 @@
     
     <h1 class="text-center bg-warning p-2">
         @foreach ($data as $value)
+        <p>کوٹ</p>
+            Type: {{ $value->type }} <br>
             Customer ID: {{ $value->customerID }} <br>
             {{ $value->name }}
         @endforeach

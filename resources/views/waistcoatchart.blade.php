@@ -32,6 +32,7 @@
     
     <h1 class="text-center bg-warning p-2">
         @foreach ($data as $value)
+        <p>واسکٹ</p>
             Customer ID: {{ $value->customerID }} <br>
             {{ $value->name }}
         @endforeach
