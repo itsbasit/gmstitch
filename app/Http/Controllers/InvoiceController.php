@@ -26,6 +26,7 @@ class InvoiceController extends Controller
                     $btn ='&nbsp;<a href="javascript:void(0)" data-id="'.$row->id.'" class=" btn btn-danger btn-sm  dlt">Delete <i class="fas fa-trash-alt"></i></a>';
                     $btn .= '&nbsp;<a href="invoice/'.$row->id.'/edit" class="btn btn-success btn-sm showbtn">Update <i class="fas fa-file-alt"></i></a>';
                     $btn .= '&nbsp;<a href="invoice/'.$row->id.'" class="btn btn-success btn-sm showbtn">Print <i class="fas fa-file-alt"></i></a>';
+                    $btn .= '&nbsp;<a href="invoice/'.$row->id.'/edit" class="btn btn-success btn-sm showbtn">Edit <i class="fas fa-pencil"></i></a>';
                     return $btn;
                 })
                 ->rawColumns(['action'])
